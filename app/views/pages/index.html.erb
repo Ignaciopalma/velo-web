@@ -131,10 +131,14 @@
   <div class="container">
     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
 
-      <h1>Únete a la comunidad Velo Express. Una opción de entregas eficiente.</h1>
+      <h1>Te gustaria usar este servicio?</h1>
+      <h2>Prueba un Envio Gratis!</h2>
+      
+      <div>
+          <%= link_to "Soy Persona", new_client_person_path, class: "btn btn-success btn-lg ciclista", id: "btnGo"  %>
+          <%= link_to "Soy Empresa", new_client_person_path, class: "btn btn-success btn-lg ciclista", id: "btnGo"  %>
 
-      <%= render "pages/form" %>
-
+      </div>
     </div>
   </div>
 </section>

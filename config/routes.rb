@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   root 'pages#index'
   resources :pages
   resources :bikers
+  resources :client_people
   post 'pages/new' => 'pages#create'
   get 'soy_ciclista' => 'pages#soy_ciclista'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

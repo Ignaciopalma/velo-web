@@ -4,10 +4,10 @@
           <div class="logo col-sm-7">
           <%= link_to image_tag("/assets/logo.png", alt: "Logo Velo"), root_path %>
 
-            <h1 class="col-md-8 col-md-offset-2">Usa tu bicicleta para trabajar libremente despachando productos.</h1>
-            <div class="clearfix"></div>
+          <h1 class="col-md-8 col-md-offset-2">Usa tu bicicleta para ganar dinero libremente.</h1>
+          <div class="clearfix"></div>
 
-            <a href="preguntas-frecuentes.html" class="btn btn-success btn-lg" id="btnGo">Preguntas Frecuentes</a>
+            <%= link_to "Inscribete Aca!", new_biker_path, class: "btn btn-success btn-lg ciclista" %>
 
           </div>
 
@@ -94,9 +94,9 @@
         <div class="container">
           <div class="">
 
-            <h1>Inscribe tu email para contactarnos contigo.</h1>
+            <h1>Te gustaria Ganar dinero haciendo envios?</h1>
 
-            <%= render "form" %>
+            <%= link_to "Inscribete Aca!", new_biker_path, class: "btn btn-success btn-lg ciclista"  %>
 
           </div>
         </div>

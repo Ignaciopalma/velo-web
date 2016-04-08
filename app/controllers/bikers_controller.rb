@@ -19,7 +19,7 @@ class BikersController < ApplicationController
 	private 
 
 	def params_biker
-		params.require(:biker).permit(:name, :email, :number)
+		params.require(:biker).permit(:email, :name, :number, :bank, :rut, :ocupation, :acc_type, :acc_number, :address)
 	end
 
 end
