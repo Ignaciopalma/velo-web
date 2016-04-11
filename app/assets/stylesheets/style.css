@@ -336,7 +336,7 @@ i{
 	width: 90%;
 	margin: 0 auto;
 }
-
+}
 
 @media(max-width:992px){
 
@@ -417,7 +417,7 @@ i{
 	.txtContenido{
 		padding-bottom: 60px;
 	}
-	
+}
 
 	/*SLIDE*/
 
@@ -546,4 +546,4 @@ i{
 	height: 370px;
 	margin-left: 27px;
 }
-
+}
