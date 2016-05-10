@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   get 'bikers/index'
 
   get 'bikers/new'
+  get 'pages/blog' => 'pages#blog'
+  get 'pages/soporte' => 'pages#soporte'
+  get 'pages/terms' => 'pages#terms'
 
   get 'bikers/create'
 

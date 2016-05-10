@@ -13,6 +13,7 @@ gem 'aws-sdk', '~> 2'
 gem 'net-ssh', '2.8.0'
 gem 'bourbon'
 gem 'neat'
+gem 'bitters'
 
 group :development do
 gem 'capistrano'

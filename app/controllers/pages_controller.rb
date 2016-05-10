@@ -8,6 +8,12 @@ class PagesController < ApplicationController
 		@biker = Biker.new
 	end
 
+	def blog
+	end
+
+	def temrs
+	end
+
 	def create
 		@page = Page.new(page_params)
 
