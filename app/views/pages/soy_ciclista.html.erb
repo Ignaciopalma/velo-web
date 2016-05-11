@@ -1,110 +1,100 @@
-      <header id="header" class="ciclista">
-        <div class="container">
-
-          <div class="logo col-sm-7">
-          <%= link_to image_tag("/assets/logo.png", alt: "Logo Velo"), root_path %>
-
-          <h1 class="col-md-8 col-md-offset-2">Usa tu bicicleta para ganar dinero libremente.</h1>
-          <div class="clearfix"></div>
-
-            <%= link_to "Inscribete Aca!", new_biker_path, class: "btn btn-success btn-lg ciclista" %>
-
-          </div>
-
-          <div class="col-sm-5">
-           <div class="imgheader col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-2">
-
-
-            <img src="/assets/iphone.png" class="iphone">
-
-
-              <div id="innerCelu" class="carousel slide" data-ride="carousel">            
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="/assets/APP-VELOEXPRESS-1.jpg" alt="...">
-                  </div>
-
-                  <div class="item">
-                    <img src="/assets/APP-VELOEXPRESS-2.jpg" alt="...">
-                  </div>
-
-                  <div class="item">
-                    <img src="/assets/APP-VELOEXPRESS-3.jpg" alt="...">
-                  </div>
+<div class="header-ciclista"> 
+    <div>
+        <article>
+            <section>
+                <div>
+                  <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
+                  <%= link_to "QUIERO UNIRME!", "#", class: "button" %> 
+                  <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
                 </div>
+                <img src="/assets/ciclis.001.jpeg">
+            </section>
+        </article>
+     </div>
+</div>
 
-              </div>
+<div class="nav-ciclista">
+    <ul>
+      <li><%= link_to "MI VELOHUB" %></li>
+      <li><%= link_to "FOROS" %></li>
+      <li><%= link_to "PREGUNTAS FRECUENTES", pages_soporte_path %></li>
+    </ul>
+</div>
 
-            </div>
-          </div>
+<div class="perfil-ciclista">
+  <article>
+    <header>
+      <h2>En tu bici, dedicate a lo que quieres, haciendo entregas en tu ciudad</h2>
+    </header>
 
-        </div>
-      </header><!-- /header -->
+    <section>
+      <h3>Santiago, Chile</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perspiciatis iste maiores eaque incidunt, hic excepturi quasi laborum veniam, distinctio consequuntur nostrum temporibus nulla numquam dolore culpa aspernatur placeat vero!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente optio repudiandae itaque quae alias sunt quisquam fuga id, consequuntur dolore eveniet! Temporibus modi, distinctio, ad officia accusamus ullam beatae aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam error odio, qui provident illum blanditiis at iure perspiciatis ad accusantium adipisci sit repellendus numquam temporibus asperiores ipsam, dignissimos sapiente.</p>
+      <img src="/assets/app-callout-i5-landing.png" alt="">
+      <ul>
+        <li>Santiago</li>
+        <li>Sao Paulo</li>
+        <li>Copenhage</li>
+        <li>Amsterdam</li>
+        <li>New York</li>
+      </ul>
+    </section>
 
-      <section id="contenido">
-        <div class="container">
+    <footer>
+      
+    </footer>
+  </article>
+</div>
 
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 headerSeccion">   
-              <h1>Tu pasión se puede transformar en tu trabajo</h1>
-              <p>Entregamos una oportunidad de trabajo a los ciclistas, a través de una app que invita a despachar los productos de nuestros clientes en la ciudad.</p>
-            </div>
-
-            <div class="col-sm-4 bloqueContenido2">
-              <div class="imgContenido2">              
-                <img src="/assets/icon-amigable-pasion.png" class="img-responsive">
-              </div>
-              <div class="txtContenido">
-                <h1>Pasión por la bicicleta</h1>
-                <p>Si te gusta pedalear, ahora puedes combinar tu pasión con trabajo. Usa tu bicicleta  y gana dinero repartiendo productos en la ciudad.</p>
-              </div>
-
-            </div>
-
-
-            <div class="col-sm-4 bloqueContenido2">
-              <div class="imgContenido2">              
-                <img src="/assets/icon-vidasana.png" class="img-responsive">
-              </div>
-              <div class="txtContenido">
-                <h1>Vida Sana</h1>
-                <p>Si elegiste la bicicleta como tu opción de transporte, aprovecha de usarla también como un medio de trabajo.</p>
-              </div>
-
-            </div>
-
-              <div class="col-sm-4 bloqueContenido2">
-                <div class="imgContenido2">
-                <img src="/assets/icon-disponibilidad-trabajolibre.png" class="img-responsive">
-              </div>
-              <div class="txtContenido">
-                <h1>Trabajo Libre</h1>
-                <p>Tu eliges cuándo y cuánto quieres trabajar. Organiza tu horario y decide cómo hacer entregas de productos en la ciudad. </p>
-              </div>
-            </div>
-
-
+<div class="iconos-de-confianza-ciclista">
+    <section>
+        <div class="iconos-header">
+          <h2>¿Porque unirme a Velo Express?</h2>
         </div>
 
         <div>
-              </section>
+          <img src="/assets/icon-amigable-pasion.png">
+          <h1>Pasión</h1>
+          <p>Entregamos una oportunidad de trabajo a los ciclistas, a través de una app que invita a despachar los productos de nuestros clientes en la ciudad.</p>
+        </div>
 
-      <section id="contacto">
-        <div class="container">
-          <div class="">
+        <div>
+          <img src="/assets/icon-vidasana.png">
+          <h1>Vida Sana</h1>
+            <p>Si elegiste la bicicleta como tu opción de transporte, aprovecha de usarla también como un medio de trabajo.</p>
+        </div>
 
-            <h1>Te gustaria Ganar dinero haciendo envios?</h1>
+        <div>
+          <img src="/assets/icon-disponibilidad-trabajolibre.png">
+          <h1>Trabajo Libre</h1>
+            <p>Tu eliges cuándo y cuánto quieres trabajar. Organiza tu horario y decide cómo hacer entregas de productos en la ciudad. </p>
+    </section>
+</div>
 
-            <%= link_to "Inscribete Aca!", new_biker_path, class: "btn btn-success btn-lg ciclista"  %>
+<div class="faq-index">
+    <section>
+      <h2>PREGUNTAS FRECUENTES</h2>
 
+      <div>
+        <%= image_tag("service1.png") %>
+        <p>Como puedo ser parte de veloexpress?</p>
+      </div>
+    
+      <div>
+        <%= image_tag("ico.png") %>
+        <p>Descarga la aplicacion para Android o IPhone, llena tus datos y estaras activo en unas 24 Horas! Puedes ver el tutorial de uso de la aplicacion <%= link_to "aqui", "#" %>. </p> 
+
+          <div>
+              <p><%= link_to "Quiero Saber Mas", pages_soporte_path, class: "button"  %></p>
           </div>
-        </div>
-      </section>
-      
-        </div>
+      </div>
 
-        </div><!-- /container -->
+
+    </section>
+</div>
+
+
+
         
         <h2 style="padding-top:30px;color:#848484;">¿Cómo usar la App?</h2>
 
@@ -194,37 +184,3 @@
     <p class="explicacion">En tu historial puedes ver la informacion completa sobre cada envio realizado y el estado en el que se encuentra, por ejemplo si fue confirmado o no por el destinatario o la situacion de pago</p>
     </div>
     
-
-  
-      </section>
-
-      <section id="contacto">
-        <div class="container">
-          <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-
-      
-
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer">
-        
-        <div class="col-sm-6 col-xs-12">
-          <p>©2015 veloexpress. Todos los derechos reservados </p>
-        </div>
-
-        <div class="supchile">
-          <img src="/assets/logo-start-up-chile.png" alt="SUP Chile">
-        </div>
-
-        <div class="col-sm-6 col-xs-12 social hidden">
-          <a href="#" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
-          <a href="#" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a>
-          <a href="#" target="_blank"><i class='icon' data-icon="&#xe047;"></i></a>
-          <a href="#" target="_blank"><i class='icon' data-icon="&#xe031;"></i></a>
-        </div>
-
-        <div class="clearfix"></div>
-
-      </footer>

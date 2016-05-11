@@ -72,7 +72,7 @@ $velo-gris: #dcdee3;
 }
 
 
- body {
+body {
  	font-family: $primary-font;
  	font-size: golden-ratio(16px, 0);
 	font-weight: 400;
@@ -85,13 +85,12 @@ $velo-gris: #dcdee3;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
  }
 
- h1 {
+h1 {
  	font-family: $titles-font;
  }
 
 h2 {
     font-family: $negritas-font;
-
 }
 
 h3,h4,h5 {
@@ -191,7 +190,8 @@ a {
 }
 
 .iconos-de-confianza {
-    background: #7f8c8d;
+    background: #ecf0f1;
+    width: 100%;
 
         section {
             @include outer-container;
@@ -202,6 +202,16 @@ a {
 
                 text-align: center;
                 padding: 3em 3em;
+
+                h2 {
+                    color: green;
+                    font-size: 3em;
+                    padding: 0.5em 0;
+                }
+
+                h1, p {
+                    color: grey;
+                }
             }
 
             img {
@@ -221,35 +231,74 @@ a {
 .faq {
     
     section {
-        @include outer-container;
 
-
-
+       padding: 1em 20%; 
 
       h1 {
             text-align: center;
             padding: 2em;
         }
-        
-        div {
-            @include fill-parent();
-            @include row(table);
 
-            img {
-                @include span-columns(4);
-                @include pad();
-                float: right;
+        div {
+
+            border-radius: 2%;
+        
+            div {
+                @include outer-container;
+
+                padding-left: 8em;
+                background: grey;
+
+
+                img {
+                    @include span-columns(4);
+                    @include pad();
+
+                    max-width: 15%;
+
+                }
+
+                p {
+                    @include span-columns(8);
+                    @include omega();
+
+                    margin-bottom: 10px;
+                    padding-top: 0 !important;
+                    margin-top: 30px;
+                }
+
+                div {
+                    @include span-columns(6);
+                    @include shift(3);
+                }
             }
 
-            p {
-                @include span-columns(8);
-                @include reset-display;
+        }
+    }
+}
 
-                margin-bottom: 30px;
-                padding-top: 0 !important;
+.quiero-usarlo {
+    background: #ecf0f1;
+
+    section {
+        @include outer-container;
+
+        div {
+            @include span-columns(6);
+            @include shift(3);
+            
+            padding: 3em;
+            h1, h2, p {
+                text-align: center;
+                color: green;
+            }
+
+            h2 {
+                font-size: 2em;
 
             }
         }
+
     }
 }
 
