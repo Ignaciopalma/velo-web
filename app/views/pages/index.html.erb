@@ -1,32 +1,46 @@
 <div class="main-container"> 
-    <div class="main wrapper clearfix">
-        <article>
-            <header>
-                <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
-                <%= link_to "PROBAR AHORA!", "#", class: "button" %> <%= link_to "Soy Ciclista", soy_ciclista_path, class: "button" %>
-                <p><a class="btn cta">PROBAR AHORA!</a> <a class="btn cta-menor">Soy Ciclista</a></p>
-                <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
-                <img src="/assets/app-callout-i5-landing.png">
-            </header>
-            <section>
-                <h2>article section h2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-            </section>
+  <article>
+      <header>
+          <div>
+            <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
+            
+            <%= link_to "PROBAR AHORA!", "#", class: "button" %> 
+            <%= link_to "Soy Ciclista", soy_ciclista_path, class: "button" %>
+            
+            <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
+          </div>
 
-
-
-            <footer>
-                <h3>article footer h3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-            </footer>
-        </article>
-
-        <aside>
-            <h3>aside</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-        </aside>
-     </div>
+          <img src="/assets/app-callout-i5-landing.png">
+      </header>   
 </div> 
+
+
+
+<div class="faq-index">
+
+    <article>
+    <section>
+      <div>
+        <h2>GUIA DE USO PARA CICLISTAS Y MENSAJEROS</h2>
+
+        <div>
+          <%= image_tag("service1.png") %>
+          <p>Como puedo ser parte de veloexpress?</p>
+        </div>
+      
+        <div>
+          <%= image_tag("ico.png") %>
+          <p>Descarga la aplicacion para Android o IPhone, llena tus datos y estaras activo en unas 24 Horas! Puedes ver el tutorial de uso de la aplicacion <%= link_to "aqui", "#" %>. </p> 
+
+            <div>
+                <p><%= link_to "Quiero Saber Mas", pages_soporte_path, class: "button"  %></p>
+            </div>
+        </div>
+      </div>
+
+    </section>
+    </article>
+</div>
 
 
 

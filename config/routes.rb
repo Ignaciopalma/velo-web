@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
-  get 'bikers/index'
+  root 'pages#index'
 
-  get 'bikers/new'
+  resources :posts do
+    resources :comments
+  end
+
   get 'pages/blog' => 'pages#blog'
   get 'pages/soporte' => 'pages#soporte'
   get 'pages/terms' => 'pages#terms'
-
-  get 'bikers/create'
-
-  root 'pages#index'
-  resources :pages
-  resources :bikers
-  resources :client_people
   post 'pages/new' => 'pages#create'
   get 'soy_ciclista' => 'pages#soy_ciclista'
 
@@ -50,8 +46,7 @@ Rails.application.routes.draw do
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
-  #     resources :comments
-  #     resources :sales do
+  #     #     resources :sales do
   #       get 'recent', on: :collection
   #     end
   #   end

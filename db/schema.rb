@@ -11,53 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160408071542) do
+ActiveRecord::Schema.define(version: 20160513221553) do
 
-  create_table "bikers", force: :cascade do |t|
-    t.string   "email"
+  create_table "comments", force: :cascade do |t|
     t.string   "name"
-    t.integer  "number"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "last_name"
-    t.string   "bank"
-    t.integer  "rut"
-    t.string   "ocupation"
-    t.string   "acc_type"
-    t.integer  "acc_number"
-    t.string   "address"
+    t.string   "description"
+    t.integer  "post_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
-  create_table "client_companies", force: :cascade do |t|
-    t.string   "client_companies"
-    t.string   "last_name"
-    t.string   "contact_name"
-    t.string   "company_name"
-    t.integer  "rut"
-    t.string   "address"
-    t.string   "email"
-    t.integer  "contact_number"
-    t.integer  "payment_day"
-    t.string   "ocupation"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
+  add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
-  create_table "client_people", force: :cascade do |t|
-    t.string   "client_people"
-    t.string   "last_name"
-    t.string   "name"
-    t.integer  "rut"
-    t.integer  "number"
-    t.string   "email"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
-  create_table "pages", force: :cascade do |t|
-    t.string   "email"
-    t.string   "name"
-    t.integer  "number"
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

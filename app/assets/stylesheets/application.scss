@@ -169,14 +169,28 @@ a {
     VELOEXPRESS BASIC THEME
    =================== */
 
-.header-container {
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+.main-container {
+
+    article {
+        header{
+            @include outer-container;
+
+            div {
+                @include span-columns(6);
+
+                margin-top: 10%;
+            }
+
+            img {
+                @include span-columns(6);
+
+                width: 25%;
+
+            }
+        }
+    }
 }
 
-.footer-container,
-.main aside {
-    border-top: 1px solid rgba(255,255,255,0.2);
-}
 
 .header-container,
 .footer-container,
@@ -228,54 +242,119 @@ a {
         }
 }
 
-.faq {
-    
-    section {
+.faq-index {
+    background: #ecf0f1;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
 
-       padding: 1em 20%; 
+    article{
 
-      h1 {
-            text-align: center;
-            padding: 2em;
-        }
+        @include outer-container;
 
-        div {
+        section {
+            @include span-columns(6);
+            padding: 1em 1em;
 
-            border-radius: 2%;
-        
             div {
-                @include outer-container;
-
-                padding-left: 8em;
-                background: grey;
 
 
-                img {
-                    @include span-columns(4);
-                    @include pad();
-
-                    max-width: 15%;
-
+                h2 {
+                    text-align: center;
+                    padding: 2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: green;
                 }
-
-                p {
-                    @include span-columns(8);
-                    @include omega();
-
-                    margin-bottom: 10px;
-                    padding-top: 0 !important;
-                    margin-top: 30px;
-                }
-
+                
                 div {
-                    @include span-columns(6);
-                    @include shift(3);
+                    @include outer-container;
+
+                    margin: 0 10%;
+
+                    img {
+                        @include span-columns(4);
+                        float: left;
+                        width: 20%;
+                    }
+
+                    p {
+                        @include span-columns(8);
+                        @include omega();
+
+                        margin-bottom: 10px;
+                        margin-top: 0;
+                        padding-top: 0 !important;
+                        padding-bottom: 3em;
+                        padding-left: 3em;
+                        color: green;
+                    }
                 }
             }
+        }
 
+         section {
+            @include span-columns(6);
+        }
+
+    }
+}
+
+.faq-soporte {
+    background: #ecf0f1;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+
+    article {
+        @include outer-container;
+        
+        section {
+            @include span-columns(6);
+            @include shift(3);
+            padding: 1em 1em;
+
+            div {
+
+
+                h2 {
+                    text-align: center;
+                    padding: 2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: green;
+                }
+                
+                div {
+                    @include outer-container;
+
+                    margin: 0;
+
+                    img {
+                        @include span-columns(4);
+                        float: left;
+                        width: 20%;
+                    }
+
+                    p {
+                        @include span-columns(8);
+                        @include omega();
+
+                        margin-bottom: 10px;
+                        margin-top: 0;
+                        padding-top: 0 !important;
+                        padding-bottom: 3em;
+                        padding-left: 3em;
+                        color: green;
+                    }
+                }
+            }
+        }
+
+         section {
+            @include span-columns(6);
         }
     }
 }
+
 
 .quiero-usarlo {
     background: #ecf0f1;
@@ -307,13 +386,11 @@ a {
 }
 
 .footer-container {
-    background: $velo-gris; 
     padding: 2em 0;
 
 
     footer {
         @include outer-container;
-        color: $velo-negro;
         text-align: center;
         padding: 2em 0;
 
@@ -324,10 +401,22 @@ a {
             @include media($mobile) {
               @include span-columns(12);
             }
-                ul {
+
+                h2 {
+                    color: $velo-gris;
+                    font-family: $negritas-font;
+                }
+
+                ul, p,  a {
                     margin: 0;
                     padding: 0;
                     list-style: none;
+                    color: $velo-gris;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #e44d26;
                 }
             }
 
@@ -373,17 +462,13 @@ nav a {
     font-weight: 200;
 
     color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
+    background: transparent;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #e44d26;
 }
+
 
 /* ==============
     MOBILE: Main
