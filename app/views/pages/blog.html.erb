@@ -1,0 +1,15 @@
+<h1>Blog Page!</h1>	
+
+<%= render 'form' %>
+
+<% @posts.each do |p| %>
+	<%= p.title %>
+	<%= p.text %>
+	<br>
+	<% p.comments.each do |w| %>
+		<%= w.name %>	
+		<%= w.description %>
+	<% end %>
+
+
+<% end %>

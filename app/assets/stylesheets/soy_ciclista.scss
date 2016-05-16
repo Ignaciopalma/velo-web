@@ -1,0 +1,311 @@
+@import "bourbon"; // or "bourbon" when in Rails
+@import "neat"; // or "neat" when in Rails 
+
+
+$primary-font: 'LaskiSlab-Regular', 'Georgia', 'Times', serif;
+$secondary-font: 'BlocC', 'Impact', 'Arial Black', sans-serif;
+$titles-font: 'LaskiSlab-ExtraLight', 'Georgia', 'Times', serif;
+$negritas-font: 'LaskiSlab-Bold', 'Georgia', 'Times', serif;
+$mobile: new-breakpoint(max-width 767px 4);
+$velo-negro: #171717;
+$velo-gris: #dcdee3;
+
+@font-face {
+  font-family: 'BlocC';
+  src: url('pt-bloc-cyrillic.eot'); /* IE9 Compat Modes */
+  src: url('pt-bloc-cyrillic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('pt-bloc-cyrillic.woff2') format('woff2'), /* Modern Browsers */
+    url('pt-bloc-cyrillic.woff') format('woff'), /* Modern Browsers */
+    url('pt-bloc-cyrillic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('pt-bloc-cyrillic.svg') format('svg'); /* Legacy iOS */  weight: normal;
+  style: normal;
+}
+
+@font-face {
+  font-family: 'LaskiSlab-Regular';
+  src: url('LaskiSlab-Regular.eot'); /* IE9 Compat Modes */
+  src: url('LaskiSlab-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('LaskiSlab-Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('LaskiSlab-Regular.woff') format('woff'), /* Modern Browsers */
+    url('LaskiSlab-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('LaskiSlab-Regular.svg') format('svg'); /* Legacy iOS */  weight: 400;
+  style: normal;
+}
+
+@font-face {
+  font-family: 'LaskiSlab-ExtraLight';
+  src: url('LaskiSlab-ExtraLight.eot'); /* IE9 Compat Modes */
+  src: url('LaskiSlab-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('LaskiSlab-ExtraLight.woff2') format('woff2'), /* Modern Browsers */
+    url('LaskiSlab-ExtraLight.woff') format('woff'), /* Modern Browsers */
+    url('LaskiSlab-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('LaskiSlab-ExtraLight.svg') format('svg'); /* Legacy iOS */  weight: 200;
+  style: normal;
+}
+
+@font-face {
+  font-family: 'LaskiSlab-Bold';
+  src: url('LaskiSlab-Bold.eot'); /* IE9 Compat Modes */
+  src: url('LaskiSlab-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('LaskiSlab-Bold.woff2') format('woff2'), /* Modern Browsers */
+    url('LaskiSlab-Bold.woff') format('woff'), /* Modern Browsers */
+    url('LaskiSlab-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('LaskiSlab-Bold.svg') format('svg'); /* Legacy iOS */  weight: 600;
+  style: normal;
+}
+
+.header-ciclista {
+	div {
+		article {
+			section {
+				@include outer-container;
+
+				padding-top: 4em;
+				margin-bottom: 5em;
+
+				div {
+					@include span-columns(6);
+					margin-top: 6%;
+					padding-left: 2em;
+				}
+
+				img {
+					@include span-columns(6);
+				}
+			}
+		}
+	}
+}
+
+.nav-ciclista {
+	ul, a {
+		font-family: $secondary-font;
+		text-decoration: none;
+		color: #ecf0f1;
+		padding-bottom: 1.6em;
+
+		li {
+			display: inline;
+			padding-right: 2em;
+			font-size: 1.2em;
+		}
+	}
+
+    a:hover {
+        color: #e44d26;
+    }
+}
+
+.perfil-ciclista {
+	background: #ecf0f1;
+
+	article {
+		@include outer-container;
+
+		header {
+			@include span-columns(6);
+			@include shift(3);
+
+			text-align: center;
+			color: green;
+			padding: 3em 0;
+
+			h2 {
+				font-size: 2em;
+			}
+
+		}
+
+		section {
+			@include outer-container;
+
+			h3 {
+				@include span-columns(3);
+
+				padding-left: 100px;
+			}
+
+			p {
+				@include span-columns(3);
+				color: grey;
+			}
+
+			img {
+				@include span-columns(3);				
+			}
+
+			ul {
+				@include span-columns(3);
+                @include omega();
+
+                color: grey;
+
+			}
+		}
+	}
+}
+
+.faq-soy-ciclista {
+    background: #ecf0f1;
+   
+    section {
+        padding: 1em 12em;
+
+
+        h2 {
+            text-align: center;
+            padding: 2em;
+            margin-top: 0;
+            color: green;
+        }
+        
+        div {
+            @include outer-container;
+
+            margin: 0 20%;
+
+            img {
+                @include span-columns(4);
+                float: left;
+                max-width: 15%;
+            }
+
+            p {
+                @include span-columns(8);
+                @include omega();
+
+                margin-bottom: 10px;
+                margin-top: 0;
+                padding-top: 0 !important;
+                padding-bottom: 3em;
+                padding-left: 3em;
+                color: green;
+            }
+        }
+    }
+}
+
+.iconos-de-confianza-ciclista {
+    background: #ecf0f1;
+    width: 100%;
+
+        section {
+            @include outer-container;
+
+            div {
+                /* Porque este no necesita @include omega(3n)???? */
+                @include span-columns(4);
+
+                text-align: center;
+                padding: 3em 3em;
+
+                h2 {
+                    color: green;
+                    font-size: 3em;
+                    padding: 0.5em 0;
+                }
+
+                h1, p {
+                    color: grey;
+                }
+            }
+
+            img {
+                max-width: 60%;
+            }
+
+            div.iconos-header{
+                @include span-columns(8);
+                @include shift(2);
+                padding-top: 2em;
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+}
+
+.como-usar-la-app {
+    background: #ecf0f1;
+
+    article {
+        @include outer-container;
+        padding: 45px 5px; 
+
+
+        header {
+            @include span-columns(6);
+            @include shift(3);
+
+            border-top: 3px solid grey;
+            padding: 30px 0;
+
+            text-align: center;
+
+            h2, h4 {
+                padding: 0;
+                color: grey;
+            }
+
+            div {
+                margin: 0 0;
+                padding: 30px 0;
+            }
+        }
+
+
+
+        section {
+            @include outer-container;
+            div {
+                @include span-columns(4);
+                @include omega(3n);
+
+                h3, p {
+                    text-align: center;
+                    color: grey;
+                }
+            }
+            img {
+                width: 80%;
+                margin: 0 10%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+
+    article.eso-fue-todo {
+        @include outer-container;
+        background: #ecf0f1;
+
+
+        header {
+            @include span-columns(6);
+            @include shift(3);
+
+            text-align: center;
+
+            h4 {
+                padding: 0;
+            }
+        }
+
+        section {
+            @include outer-container;
+
+            margin: 0 20%;
+
+            div {
+                @include span-columns(6);
+                @include omega();
+
+            }
+            img {
+                width: 80%;
+            }
+        }
+    }
+}

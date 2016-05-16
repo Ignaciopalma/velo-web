@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="cards">
+  <% @posts.each do |p| %>
+      <%= link_to(p) do %>
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/ciclis.001.jpeg" alt="">
+            </div>
+            <div class="card-header">
+              <h2><%= p.title %></h3>
+            </div>
+            <div class="card-copy">
+              <p><%= p.text %></p>
+            </div>
+
+            <div>
+                <h3>Comentarios</h3>
+                <% if p.comments.count == 0 %>
+                    <p>No hay Comentarios</p>
+                <% else %>
+                    <% p.comments.each do |w| %>
+                        <h4><%= w.name %></h4>   
+                        <p><%= w.description %></p>
+                    <% end %>
+                <% end %>
+            </div>
+          </div>
+      <% end %>
+
+  <% end %>
+</div>
+
+
+
+
