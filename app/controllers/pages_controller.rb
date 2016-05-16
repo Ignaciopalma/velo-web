@@ -5,10 +5,12 @@ class PagesController < ApplicationController
 
 	def new
 		@page = Page.new
-		@biker = Biker.new
+		@post = Post.new
+
 	end
 
 	def blog
+		@posts = Post.all
 	end
 
 	def temrs
@@ -23,13 +25,6 @@ class PagesController < ApplicationController
 			redirect_to root_path
 		end
 
-		@biker = Biker.new(biker_params)
-
-		if @biker.save
-			redirect_to root_path
-		else
-			redirect_to root_path
-		end
 	end
 
 	def soy_ciclista
@@ -40,7 +35,4 @@ class PagesController < ApplicationController
     	params.require(:page).permit(:name, :email, :number)
   	end
 
-  	def biker_params
-  		params.require(:biker).permit(:name, :email, :number)
-  	end
 end
