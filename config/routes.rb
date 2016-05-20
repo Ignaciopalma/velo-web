@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post 'pages/new' => 'pages#create'
   get 'soy_ciclista' => 'pages#soy_ciclista'
 
+  get 'onboarding/index' => 'onboarding#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

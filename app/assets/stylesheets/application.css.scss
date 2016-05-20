@@ -10,8 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
+ *= require normalize.min.css
+ *= require soy_ciclista.scss
+
  *= require_self
- *= require_tree .
 
  */
 
@@ -173,6 +176,13 @@ a {
    =================== */
 
 .main-container {
+    background: -moz-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14,60,14,1)), color-stop(100%, rgba(64,131,40,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
 
     article {
         header{
@@ -204,6 +214,11 @@ a {
 .main-anchor img {
     width: 180px;
     margin: 1.3em 0;
+}
+
+.tips-para-tu-negocio {
+    background-image: url('/assets/fondo-blur.png');
+    height: 500px;
 }
 
 .iconos-de-confianza {

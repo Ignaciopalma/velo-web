@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+   <%= stylesheet_link_tag    'onboarding', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</head>
+<body>
+	
+
+	
+  <div class="deck-container">
+	<p class="logo">
+		<a href="http://veloexpress.cl" ><img alt="Logo Veloexpress" width="100" src="/assets/logo-veloexpress.svg" /></a>
+	</p>    
+	  
+
+    <section class="slide" id="guia-intro">
+      
+      <header class="vcenter">
+          <img class="" style="margin-top:2em" width="280px" src="/assets/app-crop.png" alt="app veloexpress" />
+          <h2>¿Cómo uso la App?</h2>
+        <p class="intro">Nuestra primera versión es bastante fácil de usar<br> Hay 3 columnas principales: <strong>Envios Disponibles, Envios Activos e Historial </strong> <br />
+        A continuación te mostramos un recorrido básico por la aplicación:</p>
+        <h3 class="tab-title">Tab 1: Envios disponibles</h3>
+      </header> 
+        
+    </section>
+      
+    <section class="slide" id="tab-1">
+      
+      <header>
+        <h3 class="tab-title">Tab 1: Envios disponibles</h3>
+      </header>
+        
+      <ul class="columns">
+        <li>
+            <img src="/assets/1-lista-de-envios.jpg" alt="" class="" width="" />
+          <h4>Lista de Envios</h4>
+          <p>En esta pantalla puedes ver una lista de envios que se encuentran disponibles con informacion basica de la comuna de retiro y entrega. </p>
+          <p>Si deslizas hacia la izquierda puedes ver de cuantos Km es el recorrido, cuanto dinero paga y cuando lo pagan, sin comprometerte a hacerlo.</p>
+        </li>
+        <li>            
+            <img src="/assets/2-ruta-de-envio.jpg" alt="" class="" width="" />            
+          <h4>Ruta de Envio</h4>
+          <p>Al hacer click sobre un envío la App te muestra la ruta en forma de mapa donde punto "A" es el inicio y el punto "B" es el destino. </p>
+          <p>Tambien apareces localizado tú con un icono rojo.</p>
+          <p>Hasta este punto aun no has tomado la carrera, para info aun mas detallada del envio haz click en el boton "Acciones"</p>
+        </li>
+        <li>
+            <img src="/assets/3-detalles-de-envio.jpg" alt="" class="" width="" />
+          <h4>Detalles de Envio</h4>
+            <p>En esta pantalla puedes ver informacion detallada del envío, como sus dimensiones, peso, nombre del destinatario y direcciones exactas.</p>
+            <p>En esta pantalla es donde puedes decidir tomar el envío y realizarlo. Para hacer esto debes hacer click en el boton "Comenzar". Recuerda que tienes un tiempo limitado para cancelar la carrera una vez que la has tomado.</p>
+        </li>
+      </ul>
+          
+      <footer>
+        <a href="#" class="tab-button next">Siguiente</a>  
+      </footer>
+        
+          
+    </section>    
+
+    <section class="slide" id="tab-2-intro">
+        
+        
+        <header class="vcenter">
+            <h2>En ruta a retirar…</h2>
+            <p class="intro">Esta ha sido la primera parte del proceso en que tu libremente decides que envios quieres realizar. 
+                Si has tomado alguno podriamos decir que estas "En ruta a retirarlos". </p>
+            <p>A continuacion te mostramos la forma de hacerlo, lo mas importante en esta fase es escanear el codigo QR que puede estar pegado en la caja o desde una pantalla de celular o computador.</p>
+            <h3 class="tab-title">Tab 2: Envios activos</h3>
+        </header>
+            
+    </section>
+
+    <section class="slide" id="tab-2">
+      
+      <header>
+        <h3 class="tab-title">Tab 2: Envios activos</h3>
+      </header>
+    
+      <ul class="columns">
+        
+            <li>
+              <img src="/assets/4-lista-de-activos.jpg" alt="" class="" width="" />
+              <h4>Lista de Activos</h4>
+              <p>Cuando deslizas el dedo sobre un envio puedes ver informacion preliminar de cuanto paga el envio y la fecha de pago, asi como tambien la distancia del recorrido desde el punto de retiro al destino de entrega.</p>
+            </li>
+
+            <li>
+              <img src="/assets/5-retiro-de-envio.jpg" alt="" class="" width="" />
+              <h4>Retiro de Envio</h4>
+              <p>Al llegar al punto de retiro, se debe escanear el codigo QR. Esto es de SUMA IMPORTANCIA ya que desde este punto en adelante eres responsable del envío. Por otra parte, no escanearlo significa que no has hecho el proceso bien y no recibiras el pago.</p>
+            </li>
+            
+            <li>
+              <img src="/assets/6-escaneo-de-qr.jpg" alt="" class="" width="" />
+              <h4>Escaneo de QR</h4>
+              <p>Al llegar al punto de retiro, la persona o empresa puede que no tenga impreso el codigo y te lo muestre directamente desde el computador o la pantalla de un dispositivo móvil.</p>
+            </li>
+
+        </ul>
+      
+      <footer>
+        <a href="#" class="tab-button next">Siguiente</a>  
+      </footer>
+        
+        
+    </section>
+
+    <section class="slide" id="tab-3-intro">
+      <header class="vcenter">
+        <h2>La Entrega de Envio</h2>
+        <p>Ahora viene la parte final del proceso, la entrega. Esta procedimiento tambien es de suma importancia ya que por medio de fotos nos demostraras que has entregado efectivamente el envío o que ha fracasado por algun motivo como direccion erronea o que no se encuentre nadie en la dirección. 
+          </p><p>Recuerda que si el envío es fallido se te pagará de todas formas pero debe volver al punto de origen o en su defecto a la oficina de Velo Express. </p>
+          <br />
+     
+        <div class="info-box">
+          <h5>Para un envío exitoso tienes las siguientes opciones:</h5>
+          <img class="align-left" alt="" width="" src="/assets/check-icon.png" />
+            <ul class="list">
+                <li>Foto Carnet de quien recibe</li> 
+                <li>Foto de la persona quien recibe junto con el producto</li>
+                <li>Foto del nombre, rut y firma</li>
+                <li>En caso de ser conserjeria puedes usar el nombre del conserje y timbre del edificio.</li>
+            </ul>
+          </div>
+        
+        </header>
+    </section>
+
+    <section class="slide" id="tab-3">
+
+      <header>
+        <h3 class="tab-title">Entrega del envio</h3>
+      </header>
+    
+        
+      <ul class="columns">
+        <li>
+            <img class="" alt="" src="/assets/7-entrega-exitosa.jpg" />
+            <h4>Entrega Exitosa</h4>
+            <p>La forma mas efectiva de demostrar una entrega exitosa es con el carnet de la persona que recibe. En caso de no estar disponible puede usarse otra identificacion como licencia de conducir, identificacion de empresa u otro.</p>
+        </li>
+      
+        <li>
+            <img class="" alt="" src="/assets/8-alternativa-exitosa.jpg" />
+            <h4>Alternativa Exitosa</h4>
+            <p>Otra forma de finalizar el envío exitosamente es con una foto de la persona que recibe. Es valido en caso de no tener carnet u otro documento de identificación. También puedes usar nombre del conserje y timbre del edificio en caso de que entreguqes en conserjería.</p>        
+          </li>
+                
+        <li>
+            <img class="" alt="" src="/assets/9-entrega-fallida.jpg" />
+            <h4>Entrega Fallida</h4>
+            <p>Al momento de entregar el envío debes demostrar que has intentado entregar un envío fallido. Un ejemplo de esto es tomar una foto de la casa o la direccion a la que llegaste, de esta forma podemos comprobarlo con el cliente si es que hay algun problema.</p>        
+          </li>  
+
+      </ul> 
+    
+          
+      <footer>
+        <a href="#" class="tab-button next">Siguiente</a>  
+      </footer>
+    
+    </section>
+
+    <section class="slide" id="tab-4-intro">
+      <header class="vcenter">
+        <h2>Finalizar Entrega</h2>
+        <p class="intro">Felicitaciones! Has finalizado una entrega, el destinatario confirmará el recibo o se da por confirmado luego de 3 dias. </p><p>Recuerda que cualquier problema que se te presente en el camino, o que tengas al momento de retirar/entregar puedes reportarlo desde la misma aplicacion </p>
+      
+        
+      <div class="info-box">
+          <h5>¿Te quedaste con alguna duda? Contáctanos ya! </h5>
+          <img class="align-left" src="/assets/quest-icon.png" />
+          <ul class="list">
+              <li>Llámanos en +56 9 95773462 (Fono o Whatsapp)</li> 
+<li>O envia un correo a ignacio@veloexpress.cl para aclarar estados de pago o situaciones especiales.</li>
+          </ul>
+          </div>  
+        
+      </header>
+      
+        
+        
+    </section>
+          
+    <section class="slide" id="tab-4">
+
+      
+      <header>
+        <h3 class="tab-title">Finalizar Entrega</h3>
+      </header>
+    
+        
+      <ul class="columns">
+        <li>
+            <img class="" alt="" src="/assets/10-acreditar-con-foto.jpg" />
+            <h4>Acreditar entrega con foto</h4>
+            <p>Al llegar al destino indicado se debe tomar una fotografia que acredita la entrega exitosa o fallida</p>
+        </li>
+        <li>
+            <img class="" alt="" src="/assets/11-confirmacion-de-app.jpg" />
+            <h4>Confirmacion de App</h4>
+            <p>Si el envío se finalizo bien en el sistema, deberias ver un mensaje que dice "El envío ha sido finalizado y marcado como exitoso(o fallido)". </p>
+            <p>Otro mensaje quiere decir que ha habido algun problema en el sistema o con tu conexion a Internet por lo que deberias comunicarte con alguien de nuestro equipo.</p>   
+          </li>
+      
+        <li>
+            <img class="" alt="" src="/assets/12-finalizar-entrega.jpg" />
+            <h4>Finalizar Entrega</h4>
+            <p>Al recibir confirmación exitosa, debes hacer click en el boton "Finalizar Entrega". De esta forma se da por cerrado el envío, y se pone en proceso para embolsar los valores del encargo.</p>          
+        </li>
+      </ul>
+      
+      <footer>
+        <a href="#" class="tab-button next">Siguiente</a>  
+      </footer>    
+        
+      </section>
+      
+    <section class="slide" id="tab-5-intro">
+      
+          <header class="vcenter">
+              <h2>Eso fue todo!</h2>
+              <p>Has finalizado un envío. En la columna "historial" encontrarás la lista de tus envíos  realizados con información acerca del proceso, estado de pago y la fecha de pago. </p> 
+              <p>Esperamos que hayas disfrutado esta nueva forma de trabajar!</p>
+              <h3 class="tab-title">Tab 3: Historial de Envios</h3>
+          </header>
+      
+      </section>
+      
+    <section class="slide" id="tab-5">
+      
+      <header>
+        <h3 class="tab-title">Tab 3: Historial de Envios</h3> 
+      </header>
+          
+      <ul class="columns">
+        <li class="last-two">
+            <img class="" alt="" src="/assets/13-troubleshooting.jpg" />
+            <h4>Troubleshooting</h4>
+            <p>Una buena forma de agilizar la entrega es ser amable con la gente con quien te encuentras. Recuerda siempre saludar con una sonrisa, hablar con tranquilidad, tratar a la gente como si fuese un pariente cercano. Muchas problemas se solucionan con la buena voluntad de las personas.</p>     
+        </li>
+      
+          <li>
+            <img class="" alt="" src="/assets/14-confirmacion-y-pagos.jpg" />
+            <h4>Confirmación y pagos</h4>          
+          <p>En tu historial puedes ver la informacion completa sobre cada envio realizado y el estado en el que se encuentra, por ejemplo si fue confirmado o no por el destinatario o la situacion de pago.</p>
+          </li>
+      </ul>
+      
+        <footer>
+          
+          <div class="info-box narrow">
+<center>    <h4>Tienes alguna consulta?</h4>
+            <h5>Comunicate con nuestro equipo.</h5>
+  </center>        
+          </div>
+          </footer>  
+          
+          
+      </section>
+      
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link prev" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link next" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="/assets/jquery.min.js"></script>
+<script src="/assets/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="/assets/deck.menu.js"></script>
+<script src="/assets/deck.goto.js"></script>
+<script src="/assets/deck.status.js"></script>
+<script src="/assets/deck.navigation.js"></script>
+
+    <!-- Auto Scale content to window: off! 
+    <script src="extensions/scale/deck.scale.js"></script> -->
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
