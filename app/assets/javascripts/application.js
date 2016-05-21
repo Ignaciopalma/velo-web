@@ -10,8 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
+//= require modernizr.custom.js
 //= require jquery.min.js
+//= require deck.core.js
+//= require deck.menu.js
+//= require deck.goto.js
+//= require deck.status.js
+//= require deck.navigation.js
+
 //= require_tree .
 
 
