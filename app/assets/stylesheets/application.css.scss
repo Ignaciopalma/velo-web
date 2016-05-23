@@ -175,34 +175,7 @@ a {
     VELOEXPRESS BASIC THEME
    =================== */
 
-.main-container {
-    background: -moz-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14,60,14,1)), color-stop(100%, rgba(64,131,40,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ie10+ */
-    background: linear-gradient(0deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
 
-    article {
-        header{
-            @include outer-container;
-
-            div {
-                @include span-columns(6);
-
-                margin-top: 10%;
-            }
-
-            img {
-                @include span-columns(6);
-
-                width: 25%;
-
-            }
-        }
-    }
-}
 
 
 .header-container,
@@ -601,7 +574,6 @@ a {
 
   .device-text {
     padding: 2em;
-
     @include media($large-screen) {
       float: left;
       max-width: 50%;
@@ -614,6 +586,23 @@ a {
       font-size: 1.5em;
       margin: 0 0 0.5em 0;
       padding-bottom: 0.5em;
+    }
+
+    ul {
+      @include outer-container;
+
+      li {
+        @include span-columns(6);
+
+        font-family: $secondary-font;
+        border: 3px solid green;
+        background-color: black;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
 
     p {

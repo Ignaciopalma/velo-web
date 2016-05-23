@@ -1,20 +1,22 @@
-<div class="main-container"> 
-  <article>
 
-    <div class="device-background">
-      <div class="device-text">
-        <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
-        <%= link_to "PROBAR AHORA!", "#", class: "button" %> 
-        <%= link_to "Soy Ciclista", soy_ciclista_path, class: "button" %>
-        <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
-      </div>
-      <div class="device">
-        <div class="screen"></div>
-      </div>
-    </div>
 
-  </article> 
-</div> 
+<div class="device-background">
+  <div class="device-text">
+    <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
+    <ul>
+      <%= link_to "#" do %>
+      <li>PROBAR AHORA!</li> 
+      <% end %>
+      <%= link_to "#" do %>
+      <li>SOY CICLISTA</li> 
+      <% end %>
+    </ul>
+    <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
+  </div>
+  <div class="device">
+    <div class="screen"></div>
+  </div>
+</div>
 
 
 
