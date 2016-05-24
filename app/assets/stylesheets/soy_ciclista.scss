@@ -67,6 +67,23 @@ $velo-gris: #dcdee3;
 					@include span-columns(6);
 					margin-top: 6%;
 					padding-left: 2em;
+
+                    ul {
+                      @include outer-container;
+
+                      li {
+                        @include span-columns(6);
+
+                        font-family: $secondary-font;
+                        border: 3px solid green;
+                        background-color: black;
+                      }
+
+                      a {
+                        text-decoration: none;
+                        color: white;
+                      }
+                    }
 				}
 
 				img {
@@ -180,6 +197,32 @@ $velo-gris: #dcdee3;
                 padding-bottom: 3em;
                 padding-left: 3em;
                 color: green;
+            }
+        }
+    }
+
+    section.como-usar-la-app {
+        @include outer-container;
+
+        padding-bottom: 65px;
+
+        img {
+            @include span-columns(6);
+            @include shift(3);
+        }
+
+        div {
+            @include span-columns(6);
+            @include shift(3);
+
+            h2 {
+                padding-bottom: 0;
+            }
+            
+            p {
+                margin: 0 15%;
+                padding: 0;
+                text-align: center;
             }
         }
     }

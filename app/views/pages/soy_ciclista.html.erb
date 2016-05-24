@@ -4,7 +4,11 @@
             <section>
                 <div>
                   <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
-                  <%= link_to "QUIERO UNIRME!", "#", class: "button" %> 
+                  <ul>
+                  <%= link_to "#" do %>
+                    <li>QUIERO UNIRME</li> 
+                  <% end %>
+                  </ul>
                   <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
                 </div>
                 <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/ciclis.001.jpeg">
@@ -33,7 +37,7 @@
 
     <section>
       <h3>Santiago, Chile</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perspiciatis iste maiores eaque incidunt, hic excepturi quasi laborum veniam, distinctio consequuntur nostrum temporibus nulla numquam dolore culpa aspernatur placeat vero!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente optio repudiandae itaque quae alias sunt quisquam fuga id, consequuntur dolore eveniet! Temporibus modi, distinctio, ad officia accusamus ullam beatae aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam error odio, qui provident illum blanditiis at iure perspiciatis ad accusantium adipisci sit repellendus numquam temporibus asperiores ipsam, dignissimos sapiente.</p>
+      <p>Santiago de Chile la capital de Latinoamerica donde hemos comenzado nuestras operaciones. Posee una creciente comunidad ciclista, un clima seco sin mucha lluvia y es una ciudad razonablemente plana, condiciones ideales para pedalear. Si eres ciclista de VeloExpress puedes usar la aplicacion en cualquier ciudad donde tengamos operaciones. Unete a nuestra comunidad y se parte de este cambio en la manera de ver el trabajo, disfruta pedaleando en tu bicicleta mientras ganas dinero por ello.</p>
       <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/app-callout-i5-landing.png" alt="">
       <ul>
         <li>Santiago</li>
@@ -99,199 +103,22 @@
 
 
     </section>
-</div>
 
 
-
-<div class="como-usar-la-app">
- <!-- Como usar la App -->
-    <article>
-      <header>
-        <h2>¿Cómo usar la App?</h2>
-        <h4>Nuestra primera versión es bastante fácil de usar, hay 3 columnas principales; Envios Disponibles, Envios Activos e Historial. A continuación te mostramos un recorrido básico por la aplicación:</h4>
-
-      <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/tab_1.png" alt="">
-
-      </header>
-
-      <section>
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/envios_disponibles.png" alt="envio disponible swipe">
-          <h3>Envios Disponibles</h3>
-
-          <p>En esta pantalla puedes ver una lista de envios que se encuentran disponibles con informacion basica de la comuna de retiro y entrega. Si deslizas hacia la izquierda puedes ver de cuantos Km es el recorrido, cuanto dinero paga y cuando lo pagan, sin comprometerte a hacerlo.</p>
-        </div>
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/ruta_de_envio.png" alt="app_mapa" >
-
-          <h3>Ruta de Envio</h3>
-          <p>Al hacer click sobre un envío la App te muestra la ruta en forma de mapa, el punto "A" es el inicio y el punto "B" es el destino. Tambien apareces localizado tú con un icono rojo. Hasta este punto aun no has tomado la carrera, para info aun mas detallada del envio haz click en el boton "Acciones"</p>
-        </div>
-
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/detalles_de_envio.png" alt="comenzar envio">
-
-          <h3>Detalles del Envio</h3>
-          <p>En esta pantalla puedes ver informacion detallada del envío, como sus dimensiones, peso, nombre del destinatario y direcciones exactas. En esta pantalla es donde puedes decidir tomar el envío y realizarlo. Para hacer esto debes hacer click en el boton "Comenzar". Recuerda que tienes un tiempo limitado para cancelar la carrera una vez que la has tomado..</p>
-        </div>
-      </section> 
-
-      <footer>
-          <%= link_to "Siguiente Paso", "#en-ruta", class: "button" %>
-      </footer>
-    </article>
-
- <!-- En ruta a retirar -->
-    <article id="en-ruta">
-      <header>
-        <h2>En ruta a retirar…</h2>
-        <h4>Esta ha sido la primera parte del proceso en que tu libremente decides que envios quieres realizar. Si has tomado alguno podriamos decir que estas "En ruta a retirarlos". A continuacion te mostramos la forma de hacerlo, lo mas importante en esta fase es escanear el codigo QR que puede estar pegado en la caja o desde una pantalla de celular o computador.</h4>
-
-      <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/tab_2.png" alt="">
-
-      </header>
-
-      <section>
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/lista_de_activos.png" alt="envio disponible swipe">
+    <section class="como-usar-la-app">
           
-          <h3>Lista de Activos</h3>
-          <p>Cuando deslizas el dedo sobre un envio puedes ver informacion preliminar de cuanto paga el envio y la fecha de pago, asi como tambien la distancia del recorrido desde el punto de retiro al destino de entrega </p>
-        </div>
+        <%= link_to onboarding_index_path do %>  
+          <img class="" style="margin-top:2em" width="280px" src="/assets/app-crop.png" alt="app veloexpress" />
+          
+          <div>
+          <h2>¿Cómo uso la App?</h2>
+          <p class="intro">Revisa el Turorial de uso de la aplicacion!</p>
+          </div>
+        <% end %>
 
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/retiro_de_envio.png" alt="app_mapa" >
+    </section>
 
-          <h3>Retiro de Envio</h3>
-          <p>Al llegar al punto de retiro, se debe escanear el codigo QR. Esto es de SUMA IMPORTANCIA ya que desde este punto en adelante eres responsable del envío. Por otra parte, no escanearlo significa que no has hecho el proceso bien y no recibiras el pago.</p>
-        </div>
-
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/escaneo_de_qr.png" alt="comenzar envio">
-
-          <h3>Escaneo de QR</h3>
-          <p>Al llegar al punto de retiro, la persona o empresa puede que no tenga impreso el codigo y te lo muestre directamente desde el computador o la pantalla de un dispositivo móvil.</p>
-        </div>
-      </section>
-
-      <footer>
-          <%= link_to "Siguiente Paso", "#entrega", class: "button" %>
-      </footer>
-    </article>
-
- <!-- La Entrega del Envio -->
-    <article id="entrega">
-      <header>
-        <h2>La entrega del Envio</h2>
-        <h4>Ahora viene la parte final del proceso, la entrega. Esta procedimiento tambien es de suma importancia ya que por medio de fotos nos demostraras que has entregado efectivamente el envío o que ha fracasado por algun motivo como direccion erronea o que no se encuentre nadie en la dirección.Recuerda que si el envío es fallido se te pagará de todas formas pero debe volver al punto de origen o en su defecto a la oficina de Velo Express.</h4>
-
-      <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/tipos_envio_exitoso.png" alt="">
-
-      </header>
-
-      <section>
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/entrega_exitosa.png" alt="envio disponible swipe">
-
-          <h3>Entrega Exitosa</h3>
-          <p>La forma mas efectiva de demostrar una entrega exitosa es con el carnet de la persona que recibe. En caso de no estar disponible puede usarse otra identificacion como licencia de conducir, identificacion de empresa u otro.</p>
-        </div>
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/alternativa_exitosa.png" alt="app_mapa" >
-
-          <h3>Alternativa Exitosa</h3>
-          <p>Otra forma de finalizar el envío exitosamente es con una foto de la persona que recibe. Es valido en caso de no tener carnet u otro documento de identificación. También puedes usar nombre del conserje y timbre del edificio en caso de que entreguqes en conserjería.</p>
-        </div>
-
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/entrega_fallida.png" alt="comenzar envio">
-
-          <h3>Entrega Fallida</h3>
-          <p>Al momento de entregar el envío debes demostrar que has intentado entregar un envío fallido. Un ejemplo de esto es tomar una foto de la casa o la direccion a la que llegaste, de esta forma podemos comprobarlo con el cliente si es que hay algun problema.</p>
-        </div>
-      </section>
-
-      <footer>
-          <%= link_to "Siguiente Paso", "#finalizar", class: "button" %>
-      </footer>      
-    </article>
-
- <!-- Finalizar Entrega -->
-    <article id="finalizar">
-      <header>
-        <h2>Finalizar Entrega</h2>
-        <h4>Felicitaciones! Has finalizado una entrega, el destinatario confirmará el recibo o se da por confirmado luego de 3 dias. Recuerda que cualquier problema que se te presente en el camino, o que tengas al momento de retirar/entregar puedes reportarlo desde la misma aplicacion </h4>
-      
-      <div>
-        <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/duda.png" alt="">
-      </div>
-      </header>
-
-
-
-      <section>
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/acreditar_entrega_con_foto.png" alt="envio disponible swipe">
-
-          <h3>Acreditar Entrega con Foto</h3>
-          <p>Al llegar al destino indicado se debe tomar una fotografia que acredita la entrega exitosa o fallida</p>
-        </div>
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/confirmacion_de_app.png" alt="app_mapa" >
-
-          <h3>Confirmacion de App</h3>
-          <p>Si el envío se finalizo bien en el sistema, deberias ver un mensaje que dice "El envío ha sido finalizado y marcado como exitoso(o fallido)". <br>
-
-          Otro mensaje quiere decir que ha habido algun problema en el sistema o con tu conexion a Internet por lo que deberias comunicarte con alguien de nuestro equipo.</p>
-        </div>
-
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/finalizar_entrega.png" alt="comenzar envio">
-
-          <h3>Finalizar Entrega</h3>
-          <p>Al recibir confirmación exitosa, debes hacer click en el boton "Finalizar Entrega". De esta forma se da por cerrado el envío, y se pone en proceso para embolsar los valores del encargo.</p>
-        </div>
-      </section> 
-
-      <footer>
-          <%= link_to "Siguiente Paso", "#eso-fue-todo", class: "button" %>
-      </footer>
-    </article>
-
- <!-- Eso fue todo! -->
-    <article class="eso-fue-todo">
-      <header>
-        <h2>Eso fue todo!</h2>
-        <h4>Has finalizado un envío. En la columna "historial" encontrarás la lista de tus envíos  realizados con información acerca del proceso, estado de pago y la fecha de pago. Esperamos que hayas disfrutado esta nueva forma de trabajar!</h4>
-      </header>
-
-      <section>
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/handshake.png" alt="envio disponible swipe">
-
-          <h3>Sugerencias</h3>
-          <p>Una buena forma de agilizar la entrega es ser amable con la gente con quien te encuentras.  Recuerda siempre saludar con una sonrisa, hablar con tranquilidad, tratar a la gente como si fuese un pariente cercano.  Muchas problemas se solucionan con la buena voluntad de las personas.</p>
-        </div>
-
-        <div>
-          <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/confirmacion_y_pagos.png" alt="app_mapa" >
-
-          <h3>Confirmacion y Pagos</h3>
-          <p>En tu historial puedes ver la informacion completa sobre cada envio realizado y el estado en el que se encuentra, por ejemplo si fue confirmado o no por el destinatario o la situacion de pago.</p>
-        </div>
-      </section> <!-- Finalizar Entrega -->
-
-      <footer>
-          <%= link_to "Consultas?", "#", class: "button" %>
-      </footer>      
-    </article>
 </div>
+
+
     
