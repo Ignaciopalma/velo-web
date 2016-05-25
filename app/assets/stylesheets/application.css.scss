@@ -375,6 +375,10 @@ a {
 
 .terms {
     margin: 50px 20%;
+
+    h2, h3, h4, h5 {
+      color: #e44d26;
+    }
 }
 
 .footer-container {
@@ -597,7 +601,15 @@ a {
         font-family: $secondary-font;
         border: 3px solid green;
         background-color: black;
+        display: inline;
+        width: 42%;
       }
+
+      li.second-btn {
+        float: right;
+      }
+
+
 
       a {
         text-decoration: none;
