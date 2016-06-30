@@ -1,0 +1,47 @@
+.footer-container {
+    padding: 2em 0;
+
+
+    footer {
+        @include outer-container;
+        text-align: center;
+        padding: 2em 0;
+
+
+        div {
+            @include span-columns(4);
+            @include omega(3n);
+            @include media($mobile) {
+              @include span-columns(12);
+            }
+
+                h2 {
+                    color: $velo-gris;
+                    font-family: $negritas-font;
+                }
+
+                ul, p,  a {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    color: $velo-gris;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #e44d26;
+                }
+            }
+
+        div.sup {
+            padding: 2em 0;
+            @include span-columns(8);
+            @include shift(2);
+
+            img {
+                max-width: 50%;
+                margin: 1em auto;
+            }
+        }
+    }
+}

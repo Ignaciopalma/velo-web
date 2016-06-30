@@ -10,15 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-*= require deck.core.scss
-*= require deck.goto.scss
-*= require deck.menu.scss
-*= require deck.navigation.scss
-*= require deck.status.scss
-*= require deck.scale.scss
-*= require swiss.css
-*= require horizontal-slide.css
-*= require print.scss
+*= require onboarding/deck.core.scss
+*= require onboarding/deck.goto.scss
+*= require onboarding/deck.menu.scss
+*= require onboarding/deck.navigation.scss
+*= require onboarding/deck.status.scss
+*= require onboarding/deck.scale.scss
+*= require onboarding/swiss.css
+*= require onboarding/horizontal-slide.css
+*= require onboarding/print.scss
 
  *= require_self
 

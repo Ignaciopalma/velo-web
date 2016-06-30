@@ -4,7 +4,7 @@
         <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/velo-web/images/logotipo-veloexpress.svg"), root_path, class: "main-anchor" %>
 
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><%= link_to "Inicio", root_path %></li>
                 <li><%= link_to "Blog", posts_path %></li>
                 <li><%= link_to "Soporte", pages_soporte_path %></li>
@@ -12,3 +12,9 @@
         </nav>
     </header>
 </div>
+
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script>

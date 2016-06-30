@@ -1,0 +1,258 @@
+/* ==============
+    INDEX: Seccion Inicio
+   ============== */
+
+.device-background {
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: 53.75em !default;
+  $device-padding-vertical: 5em;
+  $device-padding-horizontal: 0.4em;
+  $device-screen-width: 14em;
+  $device-screen-height: 25em;
+  $device-background: darken(gray, 40%);
+  $device-backside-background: darken($device-background, 10%);
+  $device-text-color: white;
+  $device-background-top: #162C4C;
+  $device-background-bottom: #0A120D;
+  $gradient-angle: 10deg;
+  $device-image: $velo-gris;
+  $device-screen-image: "https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-2.jpg";
+
+  background: $velo-gris,
+              linear-gradient($gradient-angle, $device-background-bottom, $device-background-top),
+              no-repeat $device-background-top scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+  margin-top: 160px;
+
+  .device-text {
+    padding: 2em;
+    @include media($large-screen) {
+      float: left;
+      max-width: 50%;
+      padding: 0 4em 4em 4em;
+    }
+
+    h4 {
+      border-bottom: 1px solid transparentize($device-text-color, 0.7);
+      color: $device-text-color;
+      font-size: 1.5em;
+      margin: 0 0 0.5em 0;
+      padding-bottom: 0.5em;
+    }
+
+    ul {
+      @include outer-container;
+
+      li {
+        @include span-columns(6);
+
+        font-family: $secondary-font;
+        border: 3px solid green;
+        background-color: black;
+        display: inline;
+        width: 42%;
+      }
+
+      li.second-btn {
+        float: right;
+      }
+
+
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    p {
+      color: $device-text-color;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .device {
+    display: none;
+    position: relative;
+
+    @include media($large-screen) {
+      background: $device-background;
+      border-radius: 2em;
+      box-shadow:
+        1px 0 lighten($device-backside-background, 20%),
+        4px 0 lighten($device-backside-background, 2%),
+        7px 0 $device-backside-background,
+        10px 0 $device-backside-background,
+        13px 0 $device-backside-background;
+      display: block;
+      float: right;
+      margin-bottom: -12em;
+      margin-right: 15em;
+      padding: $device-padding-vertical 0;
+      transform:
+        perspective(800px)
+        translateX(0)
+        translateY(-100px)
+        translateZ(50px)
+        rotateX(0)
+        rotateY(-20deg)
+        rotateZ(0)
+      ;
+      width: $device-screen-width + (2 * $device-padding-horizontal);
+      z-index: 99999;
+
+      .screen {
+        @include size($device-screen-width $device-screen-height);
+        background-image: url($device-screen-image);
+        background-size: cover;
+        border-radius: 0.2em;
+        box-shadow: inset 0 1px 8px transparentize(black, 0.5);
+        margin: auto;
+      }
+    }
+  }
+}
+
+.device-background {
+  @include media(max-width 768px) {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+.faq-index {
+    background: #ecf0f1;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    margin-top: -60px;
+
+    article{
+
+        @include outer-container;
+
+        section {
+            @include span-columns(6);
+            padding: 1em 1em;
+
+            div {
+
+
+                h2 {
+                    text-align: center;
+                    padding: 2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: green;
+                }
+                
+                div {
+                    @include outer-container;
+
+                    margin: 0 10%;
+
+                    img {
+                        @include span-columns(4);
+                        float: left;
+                        width: 20%;
+                    }
+
+                    p {
+                        @include span-columns(8);
+                        @include omega();
+
+                        margin-bottom: 10px;
+                        margin-top: 0;
+                        padding-top: 0 !important;
+                        padding-bottom: 3em;
+                        padding-left: 3em;
+                        color: green;
+                    }
+                }
+            }
+        }
+
+         section {
+            @include span-columns(6);
+        }
+
+    }
+}
+
+
+
+
+.iconos-de-confianza {
+    background: #ecf0f1;
+    width: 100%;
+
+        section {
+            @include outer-container;
+
+            div {
+                /* Porque este no necesita @include omega(3n)???? */
+                @include span-columns(4);
+
+                text-align: center;
+                padding: 3em 3em;
+
+                h2 {
+                    color: green;
+                    font-size: 3em;
+                    padding: 0.5em 0;
+                }
+
+                h1, p {
+                    color: grey;
+                }
+            }
+
+            img {
+                max-width: 60%;
+            }
+
+            div.iconos-header{
+                @include span-columns(8);
+                @include shift(2);
+                padding-top: 2em;
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+}
+
+
+
+
+.quiero-usarlo {
+    background: #ecf0f1;
+
+    section {
+        @include outer-container;
+
+        div {
+            @include span-columns(6);
+            @include shift(3);
+            
+            padding: 3em;
+            h1, h2, p {
+                text-align: center;
+                color: green;
+            }
+
+            h2 {
+                font-size: 2em;
+
+            }
+        }
+
+    }
+}
