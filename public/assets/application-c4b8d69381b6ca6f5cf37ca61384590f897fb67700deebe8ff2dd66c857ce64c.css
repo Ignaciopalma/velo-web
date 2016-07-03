@@ -1,0 +1,2284 @@
+/* line 4, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'BlocC';
+  src: url("pt-bloc-cyrillic.eot");
+  /* IE9 Compat Modes */
+  src: url("pt-bloc-cyrillic.eot?#iefix") format("embedded-opentype"), url("pt-bloc-cyrillic.woff2") format("woff2"), url("pt-bloc-cyrillic.woff") format("woff"), url("pt-bloc-cyrillic.ttf") format("truetype"), url("pt-bloc-cyrillic.svg") format("svg");
+  /* Legacy iOS */
+  weight: normal;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-Regular';
+  src: url("LaskiSlab-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-Regular.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-Regular.woff2") format("woff2"), url("LaskiSlab-Regular.woff") format("woff"), url("LaskiSlab-Regular.ttf") format("truetype"), url("LaskiSlab-Regular.svg") format("svg");
+  /* Legacy iOS */
+  weight: 400;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-ExtraLight';
+  src: url("LaskiSlab-ExtraLight.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-ExtraLight.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-ExtraLight.woff2") format("woff2"), url("LaskiSlab-ExtraLight.woff") format("woff"), url("LaskiSlab-ExtraLight.ttf") format("truetype"), url("LaskiSlab-ExtraLight.svg") format("svg");
+  /* Legacy iOS */
+  weight: 200;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-Bold';
+  src: url("LaskiSlab-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-Bold.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-Bold.woff2") format("woff2"), url("LaskiSlab-Bold.woff") format("woff"), url("LaskiSlab-Bold.ttf") format("truetype"), url("LaskiSlab-Bold.svg") format("svg");
+  /* Legacy iOS */
+  weight: 600;
+  style: normal;
+}
+/* line 60, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4em;
+  margin-bottom: 5em;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.header-ciclista div article section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 66, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 6%;
+  padding-left: 2em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.header-ciclista div article section div:last-child {
+  margin-right: 0;
+}
+/* line 71, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section div ul {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.header-ciclista div article section div ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 74, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section div ul li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  border: 3px solid green;
+  background-color: black;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.header-ciclista div article section div ul li:last-child {
+  margin-right: 0;
+}
+/* line 82, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section div ul a {
+  text-decoration: none;
+  color: white;
+}
+/* line 89, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.header-ciclista div article section img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.header-ciclista div article section img:last-child {
+  margin-right: 0;
+}
+
+/* line 98, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.nav-ciclista ul, .nav-ciclista a {
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  text-decoration: none;
+  color: #ecf0f1;
+  padding-bottom: 1.6em;
+}
+/* line 104, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.nav-ciclista ul li, .nav-ciclista a li {
+  display: inline;
+  padding-right: 2em;
+  font-size: 1.2em;
+}
+/* line 111, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.nav-ciclista a:hover {
+  color: #e44d26;
+}
+
+/* line 116, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista {
+  background: #ecf0f1;
+}
+/* line 119, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.perfil-ciclista article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 122, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  text-align: center;
+  color: green;
+  padding: 3em 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.perfil-ciclista article header:last-child {
+  margin-right: 0;
+}
+/* line 130, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article header h2 {
+  font-size: 2em;
+}
+/* line 136, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.perfil-ciclista article section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 139, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article section h3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-left: 100px;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.perfil-ciclista article section h3:last-child {
+  margin-right: 0;
+}
+/* line 145, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article section p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  color: grey;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.perfil-ciclista article section p:last-child {
+  margin-right: 0;
+}
+/* line 150, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article section img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.perfil-ciclista article section img:last-child {
+  margin-right: 0;
+}
+/* line 154, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.perfil-ciclista article section ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0;
+  color: grey;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.perfil-ciclista article section ul:last-child {
+  margin-right: 0;
+}
+
+/* line 165, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista {
+  background: #ecf0f1;
+}
+/* line 168, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section {
+  padding: 1em 12em;
+}
+/* line 172, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section h2 {
+  text-align: center;
+  padding: 2em;
+  margin-top: 0;
+  color: green;
+}
+/* line 179, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 20%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-soy-ciclista section div::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 184, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section div img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  max-width: 15%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soy-ciclista section div img:last-child {
+  margin-right: 0;
+}
+/* line 190, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section div p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0 !important;
+  padding-bottom: 3em;
+  padding-left: 3em;
+  color: green;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soy-ciclista section div p:last-child {
+  margin-right: 0;
+}
+/* line 204, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section.como-usar-la-app {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 65px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-soy-ciclista section.como-usar-la-app::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 209, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section.como-usar-la-app img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soy-ciclista section.como-usar-la-app img:last-child {
+  margin-right: 0;
+}
+/* line 214, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section.como-usar-la-app div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soy-ciclista section.como-usar-la-app div:last-child {
+  margin-right: 0;
+}
+/* line 218, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section.como-usar-la-app div h2 {
+  padding-bottom: 0;
+}
+/* line 222, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.faq-soy-ciclista section.como-usar-la-app div p {
+  margin: 0 15%;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 231, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista {
+  background: #ecf0f1;
+  width: 100%;
+}
+/* line 235, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.iconos-de-confianza-ciclista section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 238, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section div {
+  /* Porque este no necesita @include omega(3n)???? */
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  padding: 3em 3em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.iconos-de-confianza-ciclista section div:last-child {
+  margin-right: 0;
+}
+/* line 245, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section div h2 {
+  color: green;
+  font-size: 3em;
+  padding: 0.5em 0;
+}
+/* line 251, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section div h1, .iconos-de-confianza-ciclista section div p {
+  color: grey;
+}
+/* line 256, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section img {
+  max-width: 60%;
+}
+/* line 260, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.iconos-de-confianza-ciclista section div.iconos-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  padding-top: 2em;
+  padding-bottom: 0;
+  text-align: center;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.iconos-de-confianza-ciclista section div.iconos-header:last-child {
+  margin-right: 0;
+}
+
+/* line 270, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app {
+  background: #ecf0f1;
+}
+/* line 273, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px 5px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.como-usar-la-app article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 278, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  border-top: 3px solid grey;
+  padding: 30px 0;
+  text-align: center;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.como-usar-la-app article header:last-child {
+  margin-right: 0;
+}
+/* line 287, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article header h2, .como-usar-la-app article header h4 {
+  padding: 0;
+  color: grey;
+}
+/* line 292, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article header div {
+  margin: 0 0;
+  padding: 30px 0;
+}
+/* line 300, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.como-usar-la-app article section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 302, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article section div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.como-usar-la-app article section div:last-child {
+  margin-right: 0;
+}
+/* line 78, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_omega.scss */
+.como-usar-la-app article section div:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 83, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_omega.scss */
+.como-usar-la-app article section div:nth-child(3n+1) {
+  clear: left;
+}
+/* line 306, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article section div h3, .como-usar-la-app article section div p {
+  text-align: center;
+  color: grey;
+}
+/* line 311, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article section img {
+  width: 80%;
+  margin: 0 10%;
+}
+/* line 317, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article footer {
+  text-align: center;
+  padding-top: 30px;
+}
+/* line 323, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ecf0f1;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.como-usar-la-app article.eso-fue-todo::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 328, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  text-align: center;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.como-usar-la-app article.eso-fue-todo header:last-child {
+  margin-right: 0;
+}
+/* line 334, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo header h4 {
+  padding: 0;
+}
+/* line 339, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 20%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.como-usar-la-app article.eso-fue-todo section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 344, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo section div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.como-usar-la-app article.eso-fue-todo section div:last-child {
+  margin-right: 0;
+}
+/* line 349, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/soy_ciclista.scss */
+.como-usar-la-app article.eso-fue-todo section img {
+  width: 80%;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+ */
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 27, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 31, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_buttons.scss */
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 14, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 20, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+/* line 27, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 41, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+select[multiple]:hover {
+  border-color: #b1b1b1;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+select[multiple]:focus {
+  border-color: #1565c0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  outline: none;
+}
+/* line 51, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+select[multiple]:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+select[multiple]:disabled:hover {
+  border: 1px solid #ddd;
+}
+
+/* line 61, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 65, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+[type="search"] {
+  appearance: none;
+}
+
+/* line 69, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 75, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 80, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 11, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_lists.scss */
+dl dt {
+  font-weight: 600;
+  margin-top: 0.75em;
+}
+/* line 16, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 4, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* Slider */
+/* line 3, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 28, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 33, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 42, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 48, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 54, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 58, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 66, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 69, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 72, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 78, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 82, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 86, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 90, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 96, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url(/fonts/slick.eot);
+  src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), url(/fonts/slick.woff) format("woff"), url(/fonts/slick.ttf) format("truetype"), url(/fonts/slick.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+/* line 63, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 81, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 85, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 89, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+/* line 92, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 103, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 105, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+/* line 109, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+/* line 111, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 117, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 119, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+/* line 123, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+/* line 125, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 133, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 137, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+/* line 146, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 154, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 166, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 168, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 172, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 189, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
+@font-face {
+  font-family: 'BlocC';
+  src: url("pt-bloc-cyrillic.eot");
+  /* IE9 Compat Modes */
+  src: url("pt-bloc-cyrillic.eot?#iefix") format("embedded-opentype"), url("pt-bloc-cyrillic.woff2") format("woff2"), url("pt-bloc-cyrillic.woff") format("woff"), url("pt-bloc-cyrillic.ttf") format("truetype"), url("pt-bloc-cyrillic.svg") format("svg");
+  /* Legacy iOS */
+  weight: normal;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-Regular';
+  src: url("LaskiSlab-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-Regular.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-Regular.woff2") format("woff2"), url("LaskiSlab-Regular.woff") format("woff"), url("LaskiSlab-Regular.ttf") format("truetype"), url("LaskiSlab-Regular.svg") format("svg");
+  /* Legacy iOS */
+  weight: 400;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-ExtraLight';
+  src: url("LaskiSlab-ExtraLight.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-ExtraLight.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-ExtraLight.woff2") format("woff2"), url("LaskiSlab-ExtraLight.woff") format("woff"), url("LaskiSlab-ExtraLight.ttf") format("truetype"), url("LaskiSlab-ExtraLight.svg") format("svg");
+  /* Legacy iOS */
+  weight: 200;
+  style: normal;
+}
+@font-face {
+  font-family: 'LaskiSlab-Bold';
+  src: url("LaskiSlab-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("LaskiSlab-Bold.eot?#iefix") format("embedded-opentype"), url("LaskiSlab-Bold.woff2") format("woff2"), url("LaskiSlab-Bold.woff") format("woff"), url("LaskiSlab-Bold.ttf") format("truetype"), url("LaskiSlab-Bold.svg") format("svg");
+  /* Legacy iOS */
+  weight: 600;
+  style: normal;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+.header-container {
+  background-color: #0e3c0e;
+}
+
+/* line 5, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* line 10, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+.main-anchor img {
+  width: 180px;
+  margin: 1.3em 0;
+}
+
+/* line 15, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+.slicknav_menu {
+  background: transparent;
+}
+/* line 18, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+.slicknav_menu .slicknav_btn {
+  background-color: transparent;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+/* line 27, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 33, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+nav a {
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.125em;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 200;
+  color: white;
+  background: transparent;
+}
+
+/* line 52, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+nav a:hover {
+  color: #e44d26;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 57, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  .header-container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  /* line 68, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  /* line 80, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+
+  /* line 88, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  /* line 92, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  /* line 100, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  nav ul li {
+    display: inline;
+  }
+
+  /* line 104, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 112, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  .slicknav_menu {
+    display: none;
+  }
+
+  /* line 116, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/nav.scss */
+  nav {
+    float: right;
+    width: 38%;
+  }
+}
+/* ==============
+    INDEX: Seccion Inicio
+   ============== */
+/* line 4, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section {
+  background: -moz-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0e3c0e), color-stop(100%, #408328));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* ie10+ */
+  background: linear-gradient(0deg, #408328 0%, #0e3c0e 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 );
+  /* ie6-9 */
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+/* line 16, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background {
+  min-height: 20em;
+  width: 100%;
+  margin-top: 35px;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text {
+  padding: 2em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .head-section .device-background .device-text {
+    float: left;
+    max-width: 50%;
+    padding: 0 0 0 4em;
+    margin-top: -66px;
+  }
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+  padding-bottom: 0.5em;
+}
+/* line 63, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text ul {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.head-section .device-background .device-text ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 70, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text ul li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  border: 3px solid green;
+  background-color: black;
+  display: inline;
+  width: 42%;
+  text-align: center;
+  padding: 7px 0 7px 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.head-section .device-background .device-text ul li:last-child {
+  margin-right: 0;
+}
+/* line 82, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text ul li.second-btn {
+  float: right;
+}
+/* line 86, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text ul a {
+  text-decoration: none;
+  color: white;
+}
+/* line 92, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text h5 {
+  color: white;
+  font-size: 3em;
+  margin: 10px 0 10px 0;
+  font-family: "LaskiSlab-Regular", "Georgia", "Times", serif;
+  line-height: .8em;
+}
+/* line 100, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text div.question-paragraph {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.head-section .device-background .device-text div.question-paragraph::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 103, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text div.question-paragraph p.question-mark {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  font-size: 4em;
+  margin: 0;
+  border-right: 1px solid yellow;
+  color: yellow;
+  text-align: center;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.head-section .device-background .device-text div.question-paragraph p.question-mark:last-child {
+  margin-right: 0;
+}
+/* line 114, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device-text div.question-paragraph p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  color: white;
+  line-height: 1.5em;
+  margin: 1.5em;
+  width: 76%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.head-section .device-background .device-text div.question-paragraph p:last-child {
+  margin-right: 0;
+}
+/* line 126, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .device {
+  display: none;
+  position: relative;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 126, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .head-section .device-background .device {
+    background: #1a1a1a;
+    border-radius: 2em;
+    box-shadow: 1px 0 #343434, 4px 0 #060606, 7px 0 #010101, 10px 0 #010101, 13px 0 #010101;
+    display: block;
+    float: right;
+    margin-bottom: -12em;
+    margin-right: 15em;
+    padding: 5em 0;
+    transform: perspective(800px) translateX(0) translateY(-100px) translateZ(50px) rotateX(0) rotateY(-20deg) rotateZ(0);
+    width: 14.8em;
+    z-index: 99999;
+  }
+  /* line 160, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .head-section .device-background .device .screen {
+    height: 25em;
+    width: 14em;
+    background-size: cover;
+    border-radius: 0.2em;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    background-image: url("https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-2.jpg");
+  }
+  /* line 165, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .head-section .device-background .device .screentwo {
+    height: 25em;
+    width: 14em;
+    background-size: cover;
+    border-radius: 0.2em;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    background-image: url("https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-1.jpg");
+  }
+  /* line 170, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .head-section .device-background .device .screenthree {
+    height: 25em;
+    width: 14em;
+    background-size: cover;
+    border-radius: 0.2em;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    background-image: url("https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-3.jpg");
+  }
+}
+/* line 178, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.head-section .device-background .slick-slider .slick-list {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 187, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+  .device-background {
+    margin-top: 0;
+  }
+}
+
+/* line 198, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index {
+  background: #ecf0f1;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  margin-top: -60px;
+}
+/* line 204, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-index article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 208, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 1em 1em;
+  margin-bottom: 77px;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-index article section:last-child {
+  margin-right: 0;
+}
+/* line 216, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat h2 {
+  text-align: center;
+  padding: 2em 2em 1em 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: green;
+}
+/* line 224, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-index article section div.chat div::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 229, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  width: 20%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-index article section div.chat div img:last-child {
+  margin-right: 0;
+}
+/* line 235, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0 !important;
+  color: green;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-index article section div.chat div p:last-child {
+  margin-right: 0;
+}
+/* line 246, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.question {
+  margin-bottom: 18px;
+  margin-left: 15%;
+}
+/* line 250, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.question p {
+  margin-top: 13px;
+}
+/* line 255, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.answer {
+  margin-bottom: 31px;
+  margin-left: 17.5%;
+}
+/* line 259, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.answer img {
+  width: 14%;
+  margin-right: 6%;
+}
+/* line 265, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.btn {
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  border: 3px solid green;
+  background-color: grey;
+  width: 42%;
+  text-align: center;
+  margin: 0 27%;
+  padding-top: 7px;
+}
+/* line 274, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section div.chat div.btn p {
+  width: 100%;
+  color: #dcdee3;
+  padding-bottom: 0;
+  font-size: 1.3em;
+}
+/* line 284, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.faq-index article section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-index article section:last-child {
+  margin-right: 0;
+}
+
+/* line 294, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza {
+  background: #ecf0f1;
+  width: 100%;
+}
+/* line 298, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.iconos-de-confianza section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 301, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section div {
+  /* Porque este no necesita @include omega(3n)???? */
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  padding: 3em 3em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.iconos-de-confianza section div:last-child {
+  margin-right: 0;
+}
+/* line 308, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section div h2 {
+  color: green;
+  font-size: 3em;
+  padding: 0.5em 0;
+}
+/* line 314, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section div h1, .iconos-de-confianza section div p {
+  color: grey;
+}
+/* line 319, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section img {
+  max-width: 60%;
+}
+/* line 323, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.iconos-de-confianza section div.iconos-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  padding-top: 2em;
+  padding-bottom: 0;
+  text-align: center;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.iconos-de-confianza section div.iconos-header:last-child {
+  margin-right: 0;
+}
+
+/* line 336, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo {
+  background: #ecf0f1;
+}
+/* line 339, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.quiero-usarlo section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 342, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  padding: 3em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.quiero-usarlo section div:last-child {
+  margin-right: 0;
+}
+/* line 348, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div h1, .quiero-usarlo section div h2, .quiero-usarlo section div p {
+  text-align: center;
+  color: green;
+}
+/* line 353, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div h2 {
+  font-size: 2em;
+}
+/* line 358, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div div.btn {
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  border: 3px solid green;
+  background-color: grey;
+  width: 42%;
+  text-align: center;
+  margin: 3% 27%;
+  padding: 0;
+}
+/* line 367, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div div.btn a {
+  text-decoration: none;
+}
+/* line 371, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/body.scss */
+.quiero-usarlo section div div.btn p {
+  width: 100%;
+  color: #dcdee3;
+  padding-bottom: 0;
+  font-size: 1.3em;
+}
+
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container {
+  padding: 2em 0;
+  background-color: #dcdee3;
+}
+/* line 5, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2em 0;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.footer-container footer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 10, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.footer-container footer div:last-child {
+  margin-right: 0;
+}
+/* line 78, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_omega.scss */
+.footer-container footer div:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 83, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_omega.scss */
+.footer-container footer div:nth-child(3n+1) {
+  clear: left;
+}
+@media screen and (max-width: 767px) {
+  /* line 10, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+  .footer-container footer div {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 314.84594%;
+  }
+  /* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+  .footer-container footer div:last-child {
+    margin-right: 0;
+  }
+}
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div h2 {
+  color: grey;
+  font-family: "LaskiSlab-Bold", "Georgia", "Times", serif;
+}
+/* line 22, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div ul, .footer-container footer div p, .footer-container footer div a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: grey;
+  text-decoration: none;
+}
+/* line 30, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div a:hover {
+  color: #408328;
+  font-size: 1.2em;
+}
+/* line 36, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div.sup {
+  padding: 2em 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.footer-container footer div.sup:last-child {
+  margin-right: 0;
+}
+/* line 41, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/footer.scss */
+.footer-container footer div.sup img {
+  max-width: 50%;
+  margin: 1em auto;
+}
+
+/* line 32, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: "LaskiSlab-Regular", "Georgia", "Times", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-family: "LaskiSlab-ExtraLight", "Georgia", "Times", serif;
+}
+
+/* line 50, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-family: "LaskiSlab-Bold", "Georgia", "Times", serif;
+}
+
+/* line 54, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+h3, h4, h5 {
+  font-family: "BlocC", "Impact", "Arial Black", sans-serif;
+  letter-spacing: 0.0525em;
+  color: black;
+}
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+html {
+  color: rgba(255, 255, 255, 0.99);
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 70, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.button {
+  border: 1px solid #3371b2;
+  border-color: #3371b2 #2457a3 #164297;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 0 #64a9f2;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1;
+  background-color: #4294f0;
+  background-image: -webkit-linear-gradient(#4294f0, #0156fe);
+  background-image: linear-gradient(#4294f0, #0156fe);
+  padding: 7px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #2762bf;
+  background-clip: padding-box;
+}
+/* line 282, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+.button:hover:not(:disabled) {
+  background-color: #2d88ee;
+  background-image: -webkit-linear-gradient(#2d88ee, #1554ce);
+  background-image: linear-gradient(#2d88ee, #1554ce);
+  background-clip: padding-box;
+  border: 1px solid #2062a7;
+  border-color: #2062a7 #0e479a #01318e;
+  box-shadow: inset 0 1px 0 0 #519cf0;
+  cursor: pointer;
+  text-shadow: 0 -1px 1px #134faf;
+}
+/* line 311, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+.button:active:not(:disabled), .button:focus:not(:disabled) {
+  background: #226edd;
+  border: 1px solid #0d3c8c;
+  border-bottom: 1px solid #062d8d;
+  box-shadow: inset 0 0 6px 3px #0c44b8;
+  text-shadow: 0 -1px 1px #1a52aa;
+}
+/* line 59, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss */
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 74, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 83, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* line 92, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 98, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 102, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* =====         ======== */
+/* line 112, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+body {
+  font: 16px/26px 'LaskiSlab-Regular', Helvetica, Helvetica Neue, Arial;
+}
+
+/* line 116, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+a {
+  color: green;
+}
+
+/* ===================
+    VELOEXPRESS BASIC THEME
+   =================== */
+/* line 125, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte {
+  background: #ecf0f1;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+}
+/* line 130, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-soporte article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 133, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  padding: 1em 1em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soporte article section:last-child {
+  margin-right: 0;
+}
+/* line 141, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section div h2 {
+  text-align: center;
+  padding: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: green;
+}
+/* line 149, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section div div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.faq-soporte article section div div::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 154, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section div div img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  width: 20%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soporte article section div div img:last-child {
+  margin-right: 0;
+}
+/* line 160, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section div div p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0 !important;
+  padding-bottom: 3em;
+  padding-left: 3em;
+  color: green;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soporte article section div div p:last-child {
+  margin-right: 0;
+}
+/* line 175, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.faq-soporte article section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+.faq-soporte article section:last-child {
+  margin-right: 0;
+}
+
+/* line 181, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.terms {
+  margin: 50px 20%;
+}
+/* line 184, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.terms h2, .terms h3, .terms h4, .terms h5 {
+  color: #e44d26;
+}
+
+/* line 189, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.posts {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background: #dcdee3;
+  margin: 5px 15%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.3@velo-web/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.posts::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* ==============
+    POSTS: Imagen y Texto
+   ============== */
+/* line 203, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.cards {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+/* line 209, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.cards a {
+  text-decoration: none;
+}
+
+/* line 214, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+/* line 241, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-image {
+  background-color: #F8F2B4;
+  height: 350px;
+  max-height: 350px;
+  overflow: hidden;
+}
+/* line 247, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-image img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+/* line 255, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+  transition: all 0.2s ease-in-out;
+  color: black;
+}
+/* line 266, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  color: black;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+/* line 272, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+/* line 278, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card .card-comments h3, .card .card-comments h4, .card .card-comments p, .card .card-comments label {
+  color: black;
+}
+/* line 283, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+/* line 287, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+/* line 292, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card:active {
+  background-color: #f7f7f7;
+}
+/* line 295, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.card:active .card-header {
+  background-color: #f7f7f7;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 305, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.main {
+  padding: 30px 0;
+}
+
+/* line 309, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.main article h1 {
+  font-size: 2em;
+}
+
+/* line 313, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* line 318, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.footer-container footer {
+  color: black;
+  padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 327, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 335, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.fondo-verde {
+  background: -moz-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0e3c0e), color-stop(100%, #408328));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #408328 0%, #0e3c0e 100%);
+  /* ie10+ */
+  background: linear-gradient(0deg, #408328 0%, #0e3c0e 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 );
+  /* ie6-9 */
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  /* ============
+      WIDE: Menu
+     ============ */
+  /* line 358, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  .title {
+    float: left;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  /* line 366, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  /* line 371, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 382, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 387, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 398, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 408, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 412, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 418, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 422, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 431, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 440, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 445, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 449, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 453, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 458, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 464, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 468, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 473, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 477, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 484, /Users/ignaciopalma/Desktop/my-rails-projects/velo-web/app/assets/stylesheets/application.css.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

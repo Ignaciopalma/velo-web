@@ -91,8 +91,18 @@
     <div>
       <h2>Te gustaria usar este servicio?</h2>
       <h2>Prueba un Envio Gratis!</h2>
-      <p><%= link_to "Soy Persona", "http://localhost:3000/sender/sign_up", class: "button"  %></p>
-      <p><%= link_to "Soy Empresa", "http://localhost:3000/sender/sign_up", class: "button"  %></p>
+
+      <%= link_to "http://www.envios.veloexpress.cl/sender/sign_up" do %>
+      <div class="btn">
+          <p>SOY PERSONA</p>
+      </div>
+      <% end %>
+
+      <%= link_to "http://www.envios.veloexpress.cl/sender/sign_up" do %>
+      <div class="btn">
+          <p>SOY EMPRESA</p>
+      </div>
+      <% end %>
     </div>
   </section>
 </div>
