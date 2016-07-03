@@ -30,6 +30,14 @@
         $device-image: $velo-gris;
         $device-screen-image: "https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-2.jpg";
 
+        @mixin image-slider {
+            @include size($device-screen-width $device-screen-height);
+            background-size: cover;
+            border-radius: 0.2em;
+            box-shadow: inset 0 1px 8px transparentize(black, 0.5);
+            margin: auto;
+        }
+
         min-height: 20em;
         width: 100%;
         margin-top: 35px;
@@ -41,6 +49,7 @@
                 float: left;
                 max-width: 50%;
                 padding: 0 0 0 4em;
+                margin-top: -66px;
             }
 
             h4 {
@@ -146,14 +155,28 @@
                 width: $device-screen-width + (2 * $device-padding-horizontal);
                 z-index: 99999;
 
+
+
                 .screen {
-                    @include size($device-screen-width $device-screen-height);
+                    @include image-slider;
                     background-image: url($device-screen-image);
-                    background-size: cover;
-                    border-radius: 0.2em;
-                    box-shadow: inset 0 1px 8px transparentize(black, 0.5);
-                    margin: auto;
                 }
+
+                .screentwo {
+                    @include image-slider;
+                    background-image: url('https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-1.jpg');
+                }
+
+                .screenthree {
+                    @include image-slider;
+                    background-image: url('https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-3.jpg');
+                }
+            }
+        }
+
+        .slick-slider {
+            .slick-list {
+                margin-left: 4px;
             }
         }
     }
