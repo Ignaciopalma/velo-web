@@ -1,12 +1,11 @@
 .footer-container {
     padding: 2em 0;
-
+    background-color: $velo-gris;
 
     footer {
         @include outer-container;
         text-align: center;
         padding: 2em 0;
-
 
         div {
             @include span-columns(4);
@@ -16,20 +15,21 @@
             }
 
                 h2 {
-                    color: $velo-gris;
+                    color: grey;
                     font-family: $negritas-font;
                 }
 
-                ul, p,  a {
+                ul, p, a {
                     margin: 0;
                     padding: 0;
                     list-style: none;
-                    color: $velo-gris;
+                    color: grey;
                     text-decoration: none;
                 }
 
                 a:hover {
-                    color: #e44d26;
+                    color: rgba(64,131,40,1);
+                    font-size: 1.2em;
                 }
             }
 

@@ -1,122 +1,165 @@
 /* ==============
     INDEX: Seccion Inicio
    ============== */
+.head-section {
+    background: -moz-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14,60,14,1)), color-stop(100%, rgba(64,131,40,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
 
-.device-background {
-  $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
-  $large-screen: 53.75em !default;
-  $device-padding-vertical: 5em;
-  $device-padding-horizontal: 0.4em;
-  $device-screen-width: 14em;
-  $device-screen-height: 25em;
-  $device-background: darken(gray, 40%);
-  $device-backside-background: darken($device-background, 10%);
-  $device-text-color: white;
-  $device-background-top: #162C4C;
-  $device-background-bottom: #0A120D;
-  $gradient-angle: 10deg;
-  $device-image: $velo-gris;
-  $device-screen-image: "https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-2.jpg";
+    padding-top: 150px;
+    padding-bottom: 150px;
 
-  background: $velo-gris,
-              linear-gradient($gradient-angle, $device-background-bottom, $device-background-top),
-              no-repeat $device-background-top scroll;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 20em;
-  width: 100%;
-  margin-top: 160px;
+    .device-background {
+        $base-border-radius: 3px !default;
+        $action-color: #477DCA !default;
+        $large-screen: 53.75em !default;
+        $device-padding-vertical: 5em;
+        $device-padding-horizontal: 0.4em;
+        $device-screen-width: 14em;
+        $device-screen-height: 25em;
+        $device-background: darken(gray, 40%);
+        $device-backside-background: darken($device-background, 10%);
+        $device-text-color: white;
+        $device-background-top: #162C4C;
+        $device-background-bottom: #0A120D;
+        $gradient-angle: 10deg;
+        $device-image: $velo-gris;
+        $device-screen-image: "https://s3-us-west-2.amazonaws.com/velo-web/images/APP-VELOEXPRESS-2.jpg";
 
-  .device-text {
-    padding: 2em;
-    @include media($large-screen) {
-      float: left;
-      max-width: 50%;
-      padding: 0 4em 4em 4em;
+        min-height: 20em;
+        width: 100%;
+        margin-top: 35px;
+
+        .device-text {
+            padding: 2em;
+
+            @include media($large-screen) {
+                float: left;
+                max-width: 50%;
+                padding: 0 0 0 4em;
+            }
+
+            h4 {
+                border-bottom: 1px solid transparentize($device-text-color, 0.7);
+                color: $device-text-color;
+                font-size: 1.5em;
+                margin: 0 0 0.5em 0;
+                padding-bottom: 0.5em;
+            }
+
+            ul {
+                @include outer-container;
+
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-right: 40px;
+
+                li {
+                    @include span-columns(6);
+
+                    font-family: $secondary-font;
+                    border: 3px solid green;
+                    background-color: black;
+                    display: inline;
+                    width: 42%;
+                    text-align: center;
+                    padding: 7px 0 7px 0;
+                }
+
+                li.second-btn {
+                    float: right;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            h5 {
+                color: white;
+                font-size: 3em;
+                margin: 10px 0 10px 0;
+                font-family: $primary-font;
+                line-height: .8em;
+            }
+
+            div.question-paragraph {
+              @include outer-container;
+
+              p.question-mark {
+                @include span-columns(2);
+
+                font-size: 4em;
+                margin: 0;
+                border-right: 1px solid yellow;
+                color: yellow;
+                text-align: center;
+
+              }
+
+              p {
+                @include span-columns(8);
+                @include omega();
+
+                color: $device-text-color;
+                line-height: 1.5em;
+                margin: 1.5em;
+                width: 76%;
+              }
+            }
+        }
+
+        .device {
+            display: none;
+            position: relative;
+
+            @include media($large-screen) {
+                background: $device-background;
+                border-radius: 2em;
+                box-shadow:
+                1px 0 lighten($device-backside-background, 20%),
+                4px 0 lighten($device-backside-background, 2%),
+                7px 0 $device-backside-background,
+                10px 0 $device-backside-background,
+                13px 0 $device-backside-background;
+
+                display: block;
+                float: right;
+                margin-bottom: -12em;
+                margin-right: 15em;
+                padding: $device-padding-vertical 0;
+                transform:
+                perspective(800px)
+                translateX(0)
+                translateY(-100px)
+                translateZ(50px)
+                rotateX(0)
+                rotateY(-20deg)
+                rotateZ(0)
+                ;
+
+                width: $device-screen-width + (2 * $device-padding-horizontal);
+                z-index: 99999;
+
+                .screen {
+                    @include size($device-screen-width $device-screen-height);
+                    background-image: url($device-screen-image);
+                    background-size: cover;
+                    border-radius: 0.2em;
+                    box-shadow: inset 0 1px 8px transparentize(black, 0.5);
+                    margin: auto;
+                }
+            }
+        }
     }
-
-    h4 {
-      border-bottom: 1px solid transparentize($device-text-color, 0.7);
-      color: $device-text-color;
-      font-size: 1.5em;
-      margin: 0 0 0.5em 0;
-      padding-bottom: 0.5em;
-    }
-
-    ul {
-      @include outer-container;
-
-      li {
-        @include span-columns(6);
-
-        font-family: $secondary-font;
-        border: 3px solid green;
-        background-color: black;
-        display: inline;
-        width: 42%;
-      }
-
-      li.second-btn {
-        float: right;
-      }
-
-
-
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-
-    p {
-      color: $device-text-color;
-      line-height: 1.5em;
-      margin-bottom: 1.5em;
-    }
-  }
-
-  .device {
-    display: none;
-    position: relative;
-
-    @include media($large-screen) {
-      background: $device-background;
-      border-radius: 2em;
-      box-shadow:
-        1px 0 lighten($device-backside-background, 20%),
-        4px 0 lighten($device-backside-background, 2%),
-        7px 0 $device-backside-background,
-        10px 0 $device-backside-background,
-        13px 0 $device-backside-background;
-      display: block;
-      float: right;
-      margin-bottom: -12em;
-      margin-right: 15em;
-      padding: $device-padding-vertical 0;
-      transform:
-        perspective(800px)
-        translateX(0)
-        translateY(-100px)
-        translateZ(50px)
-        rotateX(0)
-        rotateY(-20deg)
-        rotateZ(0)
-      ;
-      width: $device-screen-width + (2 * $device-padding-horizontal);
-      z-index: 99999;
-
-      .screen {
-        @include size($device-screen-width $device-screen-height);
-        background-image: url($device-screen-image);
-        background-size: cover;
-        border-radius: 0.2em;
-        box-shadow: inset 0 1px 8px transparentize(black, 0.5);
-        margin: auto;
-      }
-    }
-  }
 }
+
+
 
 .device-background {
   @include media(max-width 768px) {

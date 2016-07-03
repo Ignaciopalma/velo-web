@@ -20,4 +20,12 @@
 
 //= require_tree .
 
+var $imageLogo = document.getElementsByClassName("main-anchor");
+
+
+$(function() {
+    console.log( "ready!" );
+    $(".slicknav_menu").append($imageLogo);
+});
+
 
