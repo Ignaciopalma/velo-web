@@ -11,7 +11,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
 
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
 
     .device-background {
         $base-border-radius: 3px !default;
@@ -208,13 +208,14 @@
         section {
             @include span-columns(6);
             padding: 1em 1em;
+            margin-bottom: 77px;
 
-            div {
+            div.chat {
 
 
                 h2 {
                     text-align: center;
-                    padding: 2em;
+                    padding: 2em 2em 1em 2em;
                     margin-top: 0;
                     margin-bottom: 0;
                     color: green;
@@ -223,7 +224,7 @@
                 div {
                     @include outer-container;
 
-                    margin: 0 10%;
+                    // margin: 0 10%;
 
                     img {
                         @include span-columns(4);
@@ -238,9 +239,43 @@
                         margin-bottom: 10px;
                         margin-top: 0;
                         padding-top: 0 !important;
-                        padding-bottom: 3em;
-                        padding-left: 3em;
                         color: green;
+                    }
+                }
+
+                div.question {
+                    margin-bottom: 18px;
+                    margin-left: 15%;
+
+                    p {
+                        margin-top: 13px;
+                    }
+                }
+
+                div.answer {
+                    margin-bottom: 31px;
+                    margin-left: 17.5%;
+
+                    img {
+                        width: 14%;
+                        margin-right: 6%;
+                    }
+                }
+
+                div.btn {
+                    font-family: $secondary-font;
+                    border: 3px solid green;
+                    background-color: grey;
+                    width: 42%;
+                    text-align: center;
+                    margin: 0 27%;
+                    padding-top: 7px;
+
+                    p {
+                        width: 100%;
+                        color: $velo-gris;
+                        padding-bottom: 0;
+                        font-size: 1.3em;
                     }
                 }
             }
