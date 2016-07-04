@@ -119,7 +119,7 @@
 
                 }
 
-                p {
+                p.question-text {
                     @include span-columns(8);
                     @include omega();
 
@@ -211,6 +211,19 @@
 
                     li:last-child {
                         margin-top: 15px;
+                    }
+                }
+
+                div.question-paragraph {
+                    p.question-mark {
+                        font-size: 3em;
+                        height: 68px;
+                        padding-top: 23px;
+                    }
+
+                    p.question-text {
+                        margin: 0 0 0.5em 0.5em;
+                        font-size: 1em;
                     }
                 }
             }
