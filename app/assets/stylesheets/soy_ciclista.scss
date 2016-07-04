@@ -143,9 +143,17 @@
         padding: 1em 1em;
 
         div.chat {
-            margin: 0 20% 70px 20%;
+            margin: 0 25% 70px 25%;
             
             @include chat;
+
+            div.question {
+                margin-left: -2%;
+            }
+
+            div.answer {
+                margin-left: 1.5%;
+            }
         }
     }
 
