@@ -1,7 +1,4 @@
-/* ==============
-    INDEX: Seccion Inicio
-   ============== */
-.head-section {
+@mixin green-degrade {
     background: -moz-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14,60,14,1)), color-stop(100%, rgba(64,131,40,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* safari5.1+,chrome10+ */
@@ -9,6 +6,13 @@
     background: -ms-linear-gradient(90deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(64,131,40,1) 0%, rgba(14,60,14,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3C0E', endColorstr='#408328',GradientType=0 ); /* ie6-9 */
+}
+
+/* ==============
+    INDEX: Seccion Inicio
+   ============== */
+.head-section {
+    @include green-degrade;
 
     padding-top: 150px;
     padding-bottom: 80px;
@@ -97,29 +101,33 @@
                 line-height: .8em;
             }
 
+            p {
+                font-size: 1.1em;
+            }
+
             div.question-paragraph {
-              @include outer-container;
+                @include outer-container;
 
-              p.question-mark {
-                @include span-columns(2);
+                p.question-mark {
+                    @include span-columns(2);
 
-                font-size: 4em;
-                margin: 0;
-                border-right: 1px solid yellow;
-                color: yellow;
-                text-align: center;
+                    font-size: 4em;
+                    margin: 0;
+                    border-right: 1px solid yellow;
+                    color: yellow;
+                    text-align: center;
 
-              }
+                }
 
-              p {
-                @include span-columns(8);
-                @include omega();
+                p {
+                    @include span-columns(8);
+                    @include omega();
 
-                color: $device-text-color;
-                line-height: 1.5em;
-                margin: 1.5em;
-                width: 76%;
-              }
+                    color: $device-text-color;
+                    line-height: 1.5em;
+                    margin: 1.5em;
+                    width: 76%;
+                }
             }
         }
 
@@ -211,73 +219,7 @@
             margin-bottom: 77px;
 
             div.chat {
-
-
-                h2 {
-                    text-align: center;
-                    padding: 2em 2em 1em 2em;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    color: green;
-                }
-                
-                div {
-                    @include outer-container;
-
-                    // margin: 0 10%;
-
-                    img {
-                        @include span-columns(4);
-                        float: left;
-                        width: 20%;
-                    }
-
-                    p {
-                        @include span-columns(8);
-                        @include omega();
-
-                        margin-bottom: 10px;
-                        margin-top: 0;
-                        padding-top: 0 !important;
-                        color: green;
-                    }
-                }
-
-                div.question {
-                    margin-bottom: 18px;
-                    margin-left: 15%;
-
-                    p {
-                        margin-top: 13px;
-                    }
-                }
-
-                div.answer {
-                    margin-bottom: 31px;
-                    margin-left: 17.5%;
-
-                    img {
-                        width: 14%;
-                        margin-right: 6%;
-                    }
-                }
-
-                div.btn {
-                    font-family: $secondary-font;
-                    border: 3px solid green;
-                    background-color: grey;
-                    width: 42%;
-                    text-align: center;
-                    margin: 0 27%;
-                    padding-top: 7px;
-
-                    p {
-                        width: 100%;
-                        color: $velo-gris;
-                        padding-bottom: 0;
-                        font-size: 1.3em;
-                    }
-                }
+                @include chat;
             }
         }
 

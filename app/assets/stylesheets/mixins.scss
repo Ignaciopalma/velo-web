@@ -1,0 +1,68 @@
+@mixin chat {
+    
+    h2 {
+        text-align: center;
+        padding: 2em 2em 1em 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: green;
+    }
+    
+    div {
+        @include outer-container;
+
+        // margin: 0 10%;
+
+        img {
+            @include span-columns(4);
+            float: left;
+            width: 20%;
+        }
+
+        p {
+            @include span-columns(8);
+            @include omega();
+
+            margin-bottom: 10px;
+            margin-top: 0;
+            padding-top: 0 !important;
+            color: green;
+        }
+    }
+
+    div.question {
+        margin-bottom: 18px;
+        margin-left: 15%;
+
+        p {
+            margin-top: 13px;
+        }
+    }
+
+    div.answer {
+        margin-bottom: 31px;
+        margin-left: 17.5%;
+
+        img {
+            width: 14%;
+            margin-right: 6%;
+        }
+    }
+
+    div.btn {
+        font-family: $secondary-font;
+        border: 3px solid green;
+        background-color: grey;
+        width: 42%;
+        text-align: center;
+        margin: 0 27%;
+        padding-top: 7px;
+
+        p {
+            width: 100%;
+            color: $velo-gris;
+            padding-bottom: 0;
+            font-size: 1.3em;
+        }
+    }
+}

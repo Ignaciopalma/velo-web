@@ -1,60 +1,6 @@
-@import "bourbon"; // or "bourbon" when in Rails
-@import "neat"; // or "neat" when in Rails 
-
-
-$primary-font: 'LaskiSlab-Regular', 'Georgia', 'Times', serif;
-$secondary-font: 'BlocC', 'Impact', 'Arial Black', sans-serif;
-$titles-font: 'LaskiSlab-ExtraLight', 'Georgia', 'Times', serif;
-$negritas-font: 'LaskiSlab-Bold', 'Georgia', 'Times', serif;
-$mobile: new-breakpoint(max-width 767px 4);
-$velo-negro: #171717;
-$velo-gris: #dcdee3;
-
-@font-face {
-  font-family: 'BlocC';
-  src: url('pt-bloc-cyrillic.eot'); /* IE9 Compat Modes */
-  src: url('pt-bloc-cyrillic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('pt-bloc-cyrillic.woff2') format('woff2'), /* Modern Browsers */
-    url('pt-bloc-cyrillic.woff') format('woff'), /* Modern Browsers */
-    url('pt-bloc-cyrillic.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('pt-bloc-cyrillic.svg') format('svg'); /* Legacy iOS */  weight: normal;
-  style: normal;
-}
-
-@font-face {
-  font-family: 'LaskiSlab-Regular';
-  src: url('LaskiSlab-Regular.eot'); /* IE9 Compat Modes */
-  src: url('LaskiSlab-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('LaskiSlab-Regular.woff2') format('woff2'), /* Modern Browsers */
-    url('LaskiSlab-Regular.woff') format('woff'), /* Modern Browsers */
-    url('LaskiSlab-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('LaskiSlab-Regular.svg') format('svg'); /* Legacy iOS */  weight: 400;
-  style: normal;
-}
-
-@font-face {
-  font-family: 'LaskiSlab-ExtraLight';
-  src: url('LaskiSlab-ExtraLight.eot'); /* IE9 Compat Modes */
-  src: url('LaskiSlab-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('LaskiSlab-ExtraLight.woff2') format('woff2'), /* Modern Browsers */
-    url('LaskiSlab-ExtraLight.woff') format('woff'), /* Modern Browsers */
-    url('LaskiSlab-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('LaskiSlab-ExtraLight.svg') format('svg'); /* Legacy iOS */  weight: 200;
-  style: normal;
-}
-
-@font-face {
-  font-family: 'LaskiSlab-Bold';
-  src: url('LaskiSlab-Bold.eot'); /* IE9 Compat Modes */
-  src: url('LaskiSlab-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('LaskiSlab-Bold.woff2') format('woff2'), /* Modern Browsers */
-    url('LaskiSlab-Bold.woff') format('woff'), /* Modern Browsers */
-    url('LaskiSlab-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('LaskiSlab-Bold.svg') format('svg'); /* Legacy iOS */  weight: 600;
-  style: normal;
-}
-
 .header-ciclista {
+    @include green-degrade;
+
 	div {
 		article {
 			section {
@@ -65,24 +11,44 @@ $velo-gris: #dcdee3;
 
 				div {
 					@include span-columns(6);
-					margin-top: 6%;
+					margin-top: 3%;
 					padding-left: 2em;
 
                     ul {
-                      @include outer-container;
+                        @include outer-container;
 
-                      li {
-                        @include span-columns(6);
+                        margin: 30px 0;
 
-                        font-family: $secondary-font;
-                        border: 3px solid green;
-                        background-color: black;
-                      }
+                        li {
+                            @include span-columns(6);
 
-                      a {
-                        text-decoration: none;
+                            font-family: $secondary-font;
+                            border: 3px solid green;
+                            background-color: black;
+                            text-align: center;
+                            background-color: black;
+                            width: 42%;
+                            padding: 7px 0 7px 0;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+
+                    h5 {
                         color: white;
-                      }
+                        font-size: 3em;
+                        margin: 10px 0 10px 0;
+                        font-family: $primary-font;
+                        line-height: .8em;
+                    }
+
+                    p {
+                        margin-right: 60px;
+                        font-size: 1.1em;
+
                     }
 				}
 
@@ -92,26 +58,32 @@ $velo-gris: #dcdee3;
 			}
 		}
 	}
-}
 
-.nav-ciclista {
-	ul, a {
-		font-family: $secondary-font;
-		text-decoration: none;
-		color: #ecf0f1;
-		padding-bottom: 1.6em;
+    .nav-ciclista {
+        ul {
+            margin-left: 10%;
+        }
 
-		li {
-			display: inline;
-			padding-right: 2em;
-			font-size: 1.2em;
-		}
-	}
+        ul, a {
+            font-family: $secondary-font;
+            text-decoration: none;
+            color: #ecf0f1;
+            padding-bottom: 1.6em;
 
-    a:hover {
-        color: #e44d26;
+            li {
+                display: inline;
+                padding-right: 2em;
+                font-size: 1.2em;
+            }
+        }
+
+        a:hover {
+            color: #e44d26;
+        }
     }
 }
+
+
 
 .perfil-ciclista {
 	background: #ecf0f1;
@@ -166,38 +138,14 @@ $velo-gris: #dcdee3;
     background: #ecf0f1;
    
     section {
-        padding: 1em 12em;
+        @include outer-container;
 
+        padding: 1em 1em;
 
-        h2 {
-            text-align: center;
-            padding: 2em;
-            margin-top: 0;
-            color: green;
-        }
-        
-        div {
-            @include outer-container;
-
-            margin: 0 20%;
-
-            img {
-                @include span-columns(4);
-                float: left;
-                max-width: 15%;
-            }
-
-            p {
-                @include span-columns(8);
-                @include omega();
-
-                margin-bottom: 10px;
-                margin-top: 0;
-                padding-top: 0 !important;
-                padding-bottom: 3em;
-                padding-left: 3em;
-                color: green;
-            }
+        div.chat {
+            margin: 0 20% 70px 20%;
+            
+            @include chat;
         }
     }
 
@@ -209,6 +157,9 @@ $velo-gris: #dcdee3;
         img {
             @include span-columns(6);
             @include shift(3);
+
+            width: 20%;
+            margin-left: 39.5%
         }
 
         div {
@@ -217,6 +168,7 @@ $velo-gris: #dcdee3;
 
             h2 {
                 padding-bottom: 0;
+                text-align: center;
             }
             
             p {
@@ -348,6 +300,17 @@ $velo-gris: #dcdee3;
             }
             img {
                 width: 80%;
+            }
+        }
+    }
+}
+
+
+.faq-soporte {
+    article {
+        section {
+            div.chat {
+                @include chat;
             }
         }
     }

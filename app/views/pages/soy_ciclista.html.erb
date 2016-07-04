@@ -1,33 +1,29 @@
 <div class="header-ciclista"> 
-    <div>
-        <article>
-            <section>
-                <div>
-                  <h1>La forma inteligente de realizar despachos en la gran ciudad.</h1>
-                  <ul>
-                  <%= link_to "#" do %>
-                    <li>QUIERO UNIRME</li> 
-                  <% end %>
-                  </ul>
-                  <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
-                </div>
-                <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/ciclis.001.jpeg">
-            </section>
-        </article>
-     </div>
-</div>
+  <div>
+      <article>
+          <section>
+              <div>
+                <h5>Una forma libre de trabajar</h5>
+                <ul>
+                <%= link_to "#" do %>
+                  <li>QUIERO UNIRME</li> 
+                <% end %>
+                </ul>
+                <p>Asegúrate de poder concretar las entregas de productos en el mismo día y en los horarios que decidas.</p>
+              </div>
+              <img src="https://s3-us-west-2.amazonaws.com/velo-web/images/ciclis.001.jpeg">
+          </section>
+      </article>
+   </div>
 
-
-
-<div class="nav-ciclista">
+  <div class="nav-ciclista">
     <ul>
       <li><%= link_to "MI VELOHUB" %></li>
       <li><%= link_to "FOROS" %></li>
       <li><%= link_to "PREGUNTAS FRECUENTES", pages_soporte_path %></li>
     </ul>
+  </div>
 </div>
-
-
 
 <div class="perfil-ciclista">
   <article>
@@ -85,20 +81,23 @@
 
 <div class="faq-soy-ciclista">
     <section>
-      <h2>PREGUNTAS FRECUENTES</h2>
+      <div class="chat">
+        <h2>PREGUNTAS FRECUENTES</h2>
 
-      <div>
-        <%= image_tag("service1.png") %>
-        <p>Como puedo ser parte de veloexpress?</p>
-      </div>
-    
-      <div>
-        <%= image_tag("ico.png") %>
-        <p>Descarga la aplicacion para Android o IPhone, llena tus datos y estaras activo en unas 24 Horas! Puedes ver el tutorial de uso de la aplicacion <%= link_to "aqui", "#" %>. </p> 
-
-          <div>
-              <p><%= link_to "Quiero Saber Mas", pages_soporte_path, class: "button"  %></p>
+        <div class="question">
+          <%= image_tag("https://s3-us-west-2.amazonaws.com/velo-web/images/service1.png") %>
+          <p>Como puedo ser parte de veloexpress?</p>
+        </div>
+      
+        <div class="answer">
+          <%= image_tag("https://s3-us-west-2.amazonaws.com/velo-web/images/ico.png") %>
+          <p>Descarga la aplicacion para Android o IPhone, llena tus datos y estaras activo en unas 24 Horas! Puedes ver el tutorial de uso de la aplicacion <%= link_to "aqui", "#" %>. </p> 
+        </div>
+        <%= link_to pages_soporte_path do %>
+          <div class="btn">
+            <p>QUIERO SABER MAS</p>
           </div>
+        <% end %>
       </div>
 
 
@@ -108,7 +107,7 @@
     <section class="como-usar-la-app">
           
         <%= link_to onboarding_index_path do %>  
-          <img class="" style="margin-top:2em" width="280px" src="/assets/app-crop.png" alt="app veloexpress" />
+          <img class="" style="margin-top:2em" width="280px" src="https://s3-us-west-2.amazonaws.com/velo-web/images/app-crop.png" alt="app veloexpress" />
           
           <div>
           <h2>¿Cómo uso la App?</h2>
