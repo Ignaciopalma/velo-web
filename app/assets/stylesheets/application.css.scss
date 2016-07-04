@@ -121,63 +121,6 @@ a {
     VELOEXPRESS BASIC THEME
    =================== */
 
-
-.faq-soporte {
-    background: #ecf0f1;
-    border-top: 10px solid grey;
-    border-bottom: 10px solid grey;
-
-    article {
-        @include outer-container;
-
-        section {
-            @include span-columns(6);
-            @include shift(3);
-            padding: 2em 4em 0 0;
-
-            // div {
-
-
-            //     h2 {
-            //         text-align: center;
-            //         padding: 2em;
-            //         margin-top: 0;
-            //         margin-bottom: 0;
-            //         color: green;
-            //     }
-                
-            //     div {
-            //         @include outer-container;
-
-            //         margin: 0;
-
-            //         img {
-            //             @include span-columns(4);
-            //             float: left;
-            //             width: 20%;
-            //         }
-
-            //         p {
-            //             @include span-columns(8);
-            //             @include omega();
-
-            //             margin-bottom: 10px;
-            //             margin-top: 0;
-            //             padding-top: 0 !important;
-            //             padding-bottom: 3em;
-            //             padding-left: 3em;
-            //             color: green;
-            //         }
-            //     }
-            // }
-        }
-
-         section {
-            @include span-columns(6);
-        }
-    }
-}
-
 .terms {
     margin: 50px 20%;
 

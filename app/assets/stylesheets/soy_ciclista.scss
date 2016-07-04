@@ -315,19 +315,59 @@
 
 
 .faq-soporte {
+    background: #ecf0f1;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    
     article {
+        @include outer-container;
+
         h2 {
             color: green;
             text-align: center;
             margin: 60px 0;
         }
         section {
+            @include span-columns(6);
+            @include shift(3);
+            
+            padding: 2em 4em 0 0;
             border-top: 0.5px solid grey;
             border-bottom: -0.5px solid grey;
 
             div.chat {
                 @include chat;
             }
+        }
+
+        @include media(max-width 740px) {
+            section {
+                width: 100%;
+                margin: 0;
+                padding: 2em 1em 0 0;
+
+                div.chat {
+
+                    div.question {
+                        img {
+                            margin-top: 7%;
+                        }
+                    }
+
+                    div.answer {
+                        img {
+                            margin-top: 7%;
+                        }
+                    }
+
+                    a {
+                        div.btn {
+                            width: 80%;
+                            margin: 0 34px;
+                        }
+                    }
+                }
+            }    
         }
     }
 }
