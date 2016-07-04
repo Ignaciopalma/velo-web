@@ -198,6 +198,7 @@
             margin-top: 0;
 
             div.device-text {
+                padding: 1em 0;
                 h5 {
                     font-size: 2em;
                     text-align: center;
@@ -205,6 +206,7 @@
 
                 ul {
                     padding-right: 0;
+                    margin: 0 10%;
                     li {
                         @include span-columns(12);
                     }
