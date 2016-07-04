@@ -270,6 +270,19 @@
                 width: 100%;
 
                 div.chat {
+
+                    div.question {
+                        img {
+                            margin-top: 7%;
+                        }
+                    }
+
+                    div.answer {
+                        img {
+                            margin-top: 7%;
+                        }
+                    }
+
                     a {
                         div.btn {
                             width: 80%;
@@ -326,7 +339,7 @@
                 div.icons {
                     @include span-columns(12);
 
-                    padding: 1em 6em;
+                    padding: 1em 2em;
                 }
 
                 div.iconos-header{
