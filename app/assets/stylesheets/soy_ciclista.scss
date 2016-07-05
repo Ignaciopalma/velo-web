@@ -14,6 +14,14 @@
 					margin-top: 3%;
 					padding-left: 2em;
 
+                    @include media(min-width 740px) {
+                        a {
+                            img {
+                                display: none;
+                            }
+                        }
+                    }
+
                     ul {
                         @include outer-container;
 
@@ -65,6 +73,14 @@
                         @include span-columns(12);
 
                         padding: 0;
+
+                        a {
+                            img {
+                                width: 100%;
+                                margin: 1em 0 2.3em 0;
+                                padding: 0 10%;
+                            }
+                        }
 
                         h5 {
                             font-size: 2em;
